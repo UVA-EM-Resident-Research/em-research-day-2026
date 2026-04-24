@@ -13,7 +13,8 @@
       "methodology": "prospective-observational",
       "saemAccepted": true,
       "slidesUrl": "presentations/tavel-wells-pe-slides.pdf",
-      "posterUrl": "presentations/tavel-wells-pe-poster.pdf"
+      "posterUrl": "presentations/tavel-wells-pe-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Michael Carter",
@@ -29,7 +30,8 @@
       "methodology": "clinical-innovation",
       "saemAccepted": true,
       "slidesUrl": "presentations/carter-ai-scheduling-slides.pdf",
-      "posterUrl": "presentations/carter-ai-scheduling-poster.pdf"
+      "posterUrl": "presentations/carter-ai-scheduling-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Paul Kim",
@@ -43,7 +45,8 @@
       "blockTime": "9:19–9:31",
       "methodology": "retrospective-database",
       "saemAccepted": false,
-      "slidesUrl": "presentations/kim-systematic-review-slides.pdf"
+      "slidesUrl": "presentations/kim-systematic-review-slides.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Nicholas McKean",
@@ -56,7 +59,8 @@
       "blockTime": "9:31–9:43",
       "methodology": "clinical-innovation",
       "saemAccepted": false,
-      "slidesUrl": "presentations/mckean-whole-blood-slides.pdf"
+      "slidesUrl": "presentations/mckean-whole-blood-slides.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Matthew Britton",
@@ -72,7 +76,8 @@
       "blockTime": "9:53–10:05",
       "methodology": "retrospective-database",
       "saemAccepted": true,
-      "slidesUrl": "presentations/britton-alcohol-ed-slides.pdf"
+      "slidesUrl": "presentations/britton-alcohol-ed-slides.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Michael Larsen",
@@ -85,7 +90,8 @@
       "blockTime": "10:17–10:29",
       "methodology": "case-report",
       "saemAccepted": false,
-      "slidesUrl": "presentations/larsen-dietls-crisis-slides.pdf"
+      "slidesUrl": "presentations/larsen-dietls-crisis-slides.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Ethan Smolley",
@@ -98,7 +104,8 @@
       "blockTime": "10:29–10:47",
       "methodology": "educational-chapter",
       "saemAccepted": false,
-      "posterUrl": "presentations/smolley-peds-cases-poster.pdf"
+      "posterUrl": "presentations/smolley-peds-cases-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Joel Buenrostro",
@@ -111,7 +118,8 @@
       "blockTime": "10:29–10:47",
       "methodology": "educational-chapter",
       "saemAccepted": false,
-      "posterUrl": "presentations/buenrostro-torsion-poster.pdf"
+      "posterUrl": "presentations/buenrostro-torsion-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Daniel Rivera",
@@ -124,20 +132,22 @@
       "blockTime": "10:29–10:47",
       "methodology": "case-report",
       "saemAccepted": false,
-      "posterUrl": "presentations/rivera-junctional-tachycardia-poster.pdf"
+      "posterUrl": "presentations/rivera-junctional-tachycardia-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "name": "Jennifer Loehner",
       "slug": "loehner-cardiac-glycoside",
-      "project": "Cardiac Glycoside Toxicology — VACEP Poster",
+      "project": "Pediatric Exposures to Cyanogenic Glycoside-Containing Plants",
       "mentors": [
-        "TBD"
+        "Michenzi"
       ],
       "format": "poster-lightning",
       "blockTime": "10:29–10:47",
       "methodology": "case-report",
       "saemAccepted": false,
-      "posterUrl": "presentations/loehner-cardiac-glycoside-poster.pdf"
+      "posterUrl": "presentations/loehner-cardiac-glycoside-poster.pdf",
+      "materialStatus": "presenter"
     },
     {
       "name": "Zunaira Arbab",
@@ -150,7 +160,8 @@
       "blockTime": "10:29–10:47",
       "methodology": "retrospective-database",
       "saemAccepted": false,
-      "posterUrl": "presentations/arbab-forensic-nurses-poster.pdf"
+      "posterUrl": "presentations/arbab-forensic-nurses-poster.pdf",
+      "materialStatus": "draft"
     }
   ],
   "saemGallery": [
@@ -164,7 +175,8 @@
       "presentationType": "Abstract",
       "docLink": null,
       "alsoOnPgy3Schedule": false,
-      "posterUrl": "presentations/samuel-reed-academic-year-patterns-in-pedi-poster.pdf"
+      "posterUrl": "presentations/samuel-reed-academic-year-patterns-in-pedi-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "pi": "Margaret Holstege (Wendel, Layng, Smith)",
@@ -275,7 +287,8 @@
       "presentationType": "Abstract",
       "docLink": null,
       "alsoOnPgy3Schedule": false,
-      "posterUrl": "presentations/zoe-kitchings-characterizing-ambulatory-to-e-poster.pdf"
+      "posterUrl": "presentations/zoe-kitchings-characterizing-ambulatory-to-e-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "pi": "Priya Goyal (Wendel, Glass, Smith)",
@@ -289,8 +302,8 @@
       "alsoOnPgy3Schedule": false
     },
     {
-      "pi": "Sierra Gillard (Agraz, Wendel, Chernyavskiy, Smith)",
-      "piClean": "Sierra Gillard",
+      "pi": "Sierra Gilliard (Agraz, Wendel, Chernyavskiy, Smith)",
+      "piClean": "Sierra Gilliard",
       "slug": "sierra-gillard-limb-preservation-pathway-anal",
       "title": "Limb Preservation Pathway Analysis",
       "authors": null,
@@ -298,7 +311,8 @@
       "presentationType": "Abstract",
       "docLink": null,
       "alsoOnPgy3Schedule": false,
-      "slidesUrl": "presentations/sierra-gillard-limb-preservation-pathway-anal-slides.pdf"
+      "slidesUrl": "presentations/sierra-gillard-limb-preservation-pathway-anal-slides.pdf",
+      "materialStatus": "presenter"
     },
     {
       "pi": "Zoe Kitchings (Wendel, Layng)",
@@ -310,7 +324,8 @@
       "presentationType": "Abstract",
       "docLink": null,
       "alsoOnPgy3Schedule": false,
-      "posterUrl": "presentations/zoe-kitchings-turning-clicks-into-competitio-poster.pdf"
+      "posterUrl": "presentations/zoe-kitchings-turning-clicks-into-competitio-poster.pdf",
+      "materialStatus": "draft"
     },
     {
       "pi": "Andrew Taylor",
@@ -403,7 +418,8 @@
       "format": "saem-dryrun",
       "blockTime": "11:17–11:29",
       "saemAccepted": true,
-      "slidesUrl": "presentations/holstege-pregnancy-testing-slides.pdf"
+      "slidesUrl": "presentations/holstege-pregnancy-testing-slides.pdf",
+      "materialStatus": "presenter"
     }
   ],
   "methodologyTypes": {

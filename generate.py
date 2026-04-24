@@ -49,40 +49,57 @@ def materials_section(entry):
     if not slides and not poster:
         return ""
 
+    status = entry.get("materialStatus", "draft")
+    # Label suffix: "(draft)" for AI prototypes, nothing for presenter-provided
+    label_suffix = " (draft)" if status == "draft" else ""
+
+    # Also offer editable PPTX download when the source file exists alongside the PDF
+    def pptx_links(rel_pdf):
+        pptx_rel = rel_pdf[:-4] + ".pptx"  # same slug, .pptx extension
+        pptx_path = os.path.join(SITE_DIR, pptx_rel.replace("../", "", 1))
+        if os.path.exists(pptx_path):
+            return f'<span class="sep">·</span><a href="{esc(pptx_rel)}" download>Download PPTX</a>'
+        return ""
+
     blocks = []
     if slides:
         slides_rel = "../" + slides
         blocks.append(f'''
       <div class="material-block">
-        <div class="material-label">🎤 Slides (draft)</div>
+        <div class="material-label">🎤 Slides{label_suffix}</div>
         <div class="material-frame">
           <embed src="{esc(slides_rel)}#toolbar=0&navpanes=0" type="application/pdf" width="100%" height="560" />
         </div>
         <div class="material-links">
           <a href="{esc(slides_rel)}" target="_blank" rel="noopener">Open in new tab</a>
           <span class="sep">·</span>
-          <a href="{esc(slides_rel)}" download>Download PDF</a>
+          <a href="{esc(slides_rel)}" download>Download PDF</a>{pptx_links(slides_rel)}
         </div>
       </div>''')
     if poster:
         poster_rel = "../" + poster
         blocks.append(f'''
       <div class="material-block">
-        <div class="material-label">🖼️ Poster (draft)</div>
+        <div class="material-label">🖼️ Poster{label_suffix}</div>
         <div class="material-frame">
           <embed src="{esc(poster_rel)}#toolbar=0&navpanes=0" type="application/pdf" width="100%" height="560" />
         </div>
         <div class="material-links">
           <a href="{esc(poster_rel)}" target="_blank" rel="noopener">Open in new tab</a>
           <span class="sep">·</span>
-          <a href="{esc(poster_rel)}" download>Download PDF</a>
+          <a href="{esc(poster_rel)}" download>Download PDF</a>{pptx_links(poster_rel)}
         </div>
       </div>''')
+
+    if status == "presenter":
+        note = 'Presenter-provided materials. PDFs open in your browser; use the links to open in a new tab or download.'
+    else:
+        note = 'Working drafts — presenters may refine before April 29. PDFs open in your browser; use the links to open in a new tab or download.'
 
     return f'''
     <div class="section">
       <div class="section-title">Presentation Materials</div>
-      <div class="materials-note">Working drafts — presenters may refine before April 29. PDFs open in your browser; use the links to open in a new tab or download.</div>
+      <div class="materials-note">{note}</div>
       {"".join(blocks)}
     </div>'''
 
