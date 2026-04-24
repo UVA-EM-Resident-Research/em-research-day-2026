@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "tavel-wells-pe",
+    "name": "Sigal Tavel",
+    "title": "Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "prospective-observational"
+  },
+  {
+    "slug": "carter-ai-scheduling",
+    "name": "Michael Carter",
+    "title": "AI Scheduling Comparison \u2014 Using ChatGPT and Grok to Automate Shift Scheduling",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "clinical-innovation"
+  },
+  {
+    "slug": "kim-systematic-review",
+    "name": "Paul Kim",
+    "title": "Systematic Review Snapshot",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "mckean-whole-blood",
+    "name": "Nicholas McKean",
+    "title": "Whole Blood Protocol for EM/Trauma \u2014 Development and Addition to UVA Trauma Manual",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "clinical-innovation"
+  },
+  {
+    "slug": "britton-alcohol-ed",
+    "name": "Matthew Britton",
+    "title": "Alcohol-Related ED Visits in the Collegiate Population \u2014 Temporal Trends Analysis",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "dean-afib-pathway",
+    "name": "Gabriella Dean",
+    "title": "Atrial Fibrillation AgileMD Pathway + Case Report",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "clinical-innovation"
+  },
+  {
+    "slug": "larsen-dietls-crisis",
+    "name": "Michael Larsen",
+    "title": "Dietl's Crisis \u2014 Case Report",
+    "type": "pgy3",
+    "format": "podium",
+    "methodology": "case-report"
+  },
+  {
+    "slug": "smolley-peds-cases",
+    "name": "Ethan Smolley",
+    "title": "Pediatric EM Cases \u2014 Book Chapter",
+    "type": "pgy3",
+    "format": "poster-lightning",
+    "methodology": "educational-chapter"
+  },
+  {
+    "slug": "buenrostro-torsion",
+    "name": "Joel Buenrostro",
+    "title": "Testicular Torsion \u2014 Book Chapter",
+    "type": "pgy3",
+    "format": "poster-lightning",
+    "methodology": "educational-chapter"
+  },
+  {
+    "slug": "rivera-junctional-tachycardia",
+    "name": "Daniel Rivera",
+    "title": "Junctional Tachycardia \u2014 Article",
+    "type": "pgy3",
+    "format": "poster-lightning",
+    "methodology": "case-report"
+  },
+  {
+    "slug": "loehner-cardiac-glycoside",
+    "name": "Jennifer Loehner",
+    "title": "Cardiac Glycoside Toxicology \u2014 VACEP Poster",
+    "type": "pgy3",
+    "format": "poster-lightning",
+    "methodology": "case-report"
+  },
+  {
+    "slug": "arbab-forensic-nurses",
+    "name": "Zunaira Arbab",
+    "title": "Forensic Nurse Examiners \u2014 Published Article",
+    "type": "pgy3",
+    "format": "poster-lightning",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "samuel-reed-academic-year-patterns-in-pedi",
+    "name": "Samuel Reed",
+    "title": "Academic Year Patterns in Pediatric Psychiatric Emergency Department Visits",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "margaret-holstege-ordering-patterns-of-pregnancy",
+    "name": "Margaret Holstege",
+    "title": "Ordering Patterns of Pregnancy Tests",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "charlie-burgess-who-moved-my-button-the-impac",
+    "name": "Charlie Burgess",
+    "title": "Who Moved My Button? The Impact of Reduced Hydromorphone Default Dosing on Ordering Patterns in the Emergency Department.",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "thomas-hartka-contextual-themes-in-firearm-i",
+    "name": "Thomas Hartka",
+    "title": "Contextual Themes in Firearm Incidents Identified Through Automated Topic Modeling ",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "andrew-muck-caretaker-adverse-event-detec",
+    "name": "Andrew Muck",
+    "title": "Caretaker: Adverse Event Detection",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "andrew-muck-caretaker-implementation-qual",
+    "name": "Andrew Muck",
+    "title": "Caretaker: Implementation Qualitative",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "andrew-taylor-wearable-systematic-review",
+    "name": "Andrew Taylor",
+    "title": "Wearable Systematic Review",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "andrew-taylor-personal-statement-analysis",
+    "name": "Andrew Taylor",
+    "title": "Personal Statement Analysis",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "andrew-taylor-topic-analysis-of-wonder-data",
+    "name": "Andrew Taylor",
+    "title": "Topic Analysis of Wonder Data Set",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "charlie-burgess-reassessing-emergency-departme",
+    "name": "Charlie Burgess",
+    "title": "Reassessing Emergency Department Observation After High-Sensitivity Troponin Adoption.",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "zoe-kitchings-characterizing-ambulatory-to-e",
+    "name": "Zoe Kitchings",
+    "title": "Characterizing Ambulatory-to-ED Referral Patterns Using an EHR-Integrated Clinic/Home Transfer Order",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "priya-goyal-impact-of-a-change-in-trauma-p",
+    "name": "Priya Goyal",
+    "title": "Impact of a Change in Trauma Pan-Scan Imaging Practice on Clinical Outcomes in the Emergency Department",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "sierra-gillard-limb-preservation-pathway-anal",
+    "name": "Sierra Gillard",
+    "title": "Limb Preservation Pathway Analysis",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "zoe-kitchings-turning-clicks-into-competitio",
+    "name": "Zoe Kitchings",
+    "title": "Turning Clicks into Competition: Incentivizing Consult Documentation to Optimize Patient Throughput",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "andrew-taylor-fhir-based-uti-model-developme",
+    "name": "Andrew Taylor",
+    "title": "FHIR Based UTI Model Development and Implementation at UVA Health System",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "jacob-britton-temporal-trends-of-alcohol-rel",
+    "name": "Jacob Britton",
+    "title": "Temporal Trends of Alcohol Related Visits to the Emergency Department in the Collegiate Population",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "benton-spirek-pit-imaging-utilization",
+    "name": "Benton Spirek",
+    "title": "PIT Imaging Utilization ",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "daniel-wu-trends-in-lumbar-puncture-util",
+    "name": "Daniel Wu",
+    "title": "Trends in Lumbar Puncture Utilization Amongst Specialties Across a Health System",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "benton-spirek-pit-imaging-utilization-impa",
+    "name": "Benton Spirek",
+    "title": "PIT Imaging Utilization - Impact on Abdominal Pain Evaluation",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "daniel-wu-ed-lumbar-puncture-volumes-t",
+    "name": "Daniel Wu",
+    "title": "ED Lumbar Puncture Volumes - Trends in Indication and Success Rates",
+    "type": "saem",
+    "format": "saem-gallery",
+    "methodology": "retrospective-database"
+  },
+  {
+    "slug": "holstege-pregnancy-testing",
+    "name": "Margaret Holstege",
+    "title": "Optimization of Pregnancy Testing in the UVA ED",
+    "type": "dryrun",
+    "format": "saem-dryrun",
+    "methodology": "prospective-observational"
+  }
+]

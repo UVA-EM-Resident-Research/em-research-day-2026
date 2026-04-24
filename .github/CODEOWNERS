@@ -1,0 +1,3 @@
+# Default code owner — every PR gets auto-requested review.
+# Replace <github-username> with Matt's actual GitHub handle after first push.
+*       @<github-username>

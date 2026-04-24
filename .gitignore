@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# iCloud sync metadata (just in case someone works inside iCloud)
+._*
+.iCloud/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (for generate.py)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Local scratch
+*.log
+.tmp/
+tmp/
+.cache/
+
+# Node (if ever added)
+node_modules/
+
+# Claude local state (not to be versioned)
+.claude/sessions/

@@ -1,0 +1,443 @@
+{
+  "generated": "2026-04-14",
+  "pgy3Presenters": [
+    {
+      "name": "Sigal Tavel",
+      "slug": "tavel-wells-pe",
+      "project": "Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score",
+      "mentors": [
+        "Easter"
+      ],
+      "format": "podium",
+      "blockTime": "8:55\u20139:07",
+      "methodology": "prospective-observational",
+      "saemAccepted": true,
+      "notes": "Strongest presentation-ready project"
+    },
+    {
+      "name": "Michael Carter",
+      "slug": "carter-ai-scheduling",
+      "project": "AI Scheduling Comparison \u2014 Using ChatGPT and Grok to Automate Shift Scheduling",
+      "mentors": [
+        "Layng",
+        "Smith",
+        "Hartka"
+      ],
+      "format": "podium",
+      "blockTime": "9:07\u20139:19",
+      "methodology": "clinical-innovation",
+      "saemAccepted": true,
+      "notes": "SAEM innovation submission; Heather flagged as most motivated"
+    },
+    {
+      "name": "Paul Kim",
+      "slug": "kim-systematic-review",
+      "project": "Systematic Review Snapshot",
+      "mentors": [
+        "Easter",
+        "Britt Long"
+      ],
+      "format": "podium",
+      "blockTime": "9:19\u20139:31",
+      "methodology": "retrospective-database",
+      "saemAccepted": false,
+      "notes": "Accepted at Annals of Emergency Medicine"
+    },
+    {
+      "name": "Nicholas McKean",
+      "slug": "mckean-whole-blood",
+      "project": "Whole Blood Protocol for EM/Trauma \u2014 Development and Addition to UVA Trauma Manual",
+      "mentors": [
+        "Lindbeck"
+      ],
+      "format": "podium",
+      "blockTime": "9:31\u20139:43",
+      "methodology": "clinical-innovation",
+      "saemAccepted": false,
+      "notes": ""
+    },
+    {
+      "name": "Matthew Britton",
+      "slug": "britton-alcohol-ed",
+      "project": "Alcohol-Related ED Visits in the Collegiate Population \u2014 Temporal Trends Analysis",
+      "mentors": [
+        "Wendel",
+        "Smith",
+        "Farah",
+        "Holstege"
+      ],
+      "format": "podium",
+      "blockTime": "9:53\u201310:05",
+      "methodology": "retrospective-database",
+      "saemAccepted": true,
+      "notes": "Needs confirmation \u2014 no intake form on file"
+    },
+    {
+      "name": "Gabriella Dean",
+      "slug": "dean-afib-pathway",
+      "project": "Atrial Fibrillation AgileMD Pathway + Case Report",
+      "mentors": [
+        "Winston Wu",
+        "Easter"
+      ],
+      "format": "podium",
+      "blockTime": "10:05\u201310:17",
+      "methodology": "clinical-innovation",
+      "saemAccepted": false,
+      "notes": "Accepted as poster at national conference"
+    },
+    {
+      "name": "Michael Larsen",
+      "slug": "larsen-dietls-crisis",
+      "project": "Dietl's Crisis \u2014 Case Report",
+      "mentors": [
+        "Thom"
+      ],
+      "format": "podium",
+      "blockTime": "10:17\u201310:29",
+      "methodology": "case-report",
+      "saemAccepted": false,
+      "notes": ""
+    },
+    {
+      "name": "Ethan Smolley",
+      "slug": "smolley-peds-cases",
+      "project": "Pediatric EM Cases \u2014 Book Chapter",
+      "mentors": [
+        "Easter"
+      ],
+      "format": "poster-lightning",
+      "blockTime": "10:29\u201310:47",
+      "methodology": "educational-chapter",
+      "saemAccepted": false,
+      "notes": ""
+    },
+    {
+      "name": "Joel Buenrostro",
+      "slug": "buenrostro-torsion",
+      "project": "Testicular Torsion \u2014 Book Chapter",
+      "mentors": [
+        "Easter"
+      ],
+      "format": "poster-lightning",
+      "blockTime": "10:29\u201310:47",
+      "methodology": "educational-chapter",
+      "saemAccepted": false,
+      "notes": ""
+    },
+    {
+      "name": "Daniel Rivera",
+      "slug": "rivera-junctional-tachycardia",
+      "project": "Junctional Tachycardia \u2014 Article",
+      "mentors": [
+        "Vandersteenhoven"
+      ],
+      "format": "poster-lightning",
+      "blockTime": "10:29\u201310:47",
+      "methodology": "case-report",
+      "saemAccepted": false,
+      "notes": ""
+    },
+    {
+      "name": "Jennifer Loehner",
+      "slug": "loehner-cardiac-glycoside",
+      "project": "Cardiac Glycoside Toxicology \u2014 VACEP Poster",
+      "mentors": [
+        "TBD"
+      ],
+      "format": "poster-lightning",
+      "blockTime": "10:29\u201310:47",
+      "methodology": "case-report",
+      "saemAccepted": false,
+      "notes": "Needs mentor confirmation"
+    },
+    {
+      "name": "Zunaira Arbab",
+      "slug": "arbab-forensic-nurses",
+      "project": "Forensic Nurse Examiners \u2014 Published Article",
+      "mentors": [
+        "TBD"
+      ],
+      "format": "poster-lightning",
+      "blockTime": "10:29\u201310:47",
+      "methodology": "retrospective-database",
+      "saemAccepted": false,
+      "notes": "Published article; needs mentor confirmation"
+    }
+  ],
+  "saemGallery": [
+    {
+      "pi": "Dr. Samuel Reed (Smith)",
+      "piClean": "Samuel Reed",
+      "slug": "samuel-reed-academic-year-patterns-in-pedi",
+      "title": "Academic Year Patterns in Pediatric Psychiatric Emergency Department Visits",
+      "authors": null,
+      "category": "Pediatrics",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Margaret Holstege (Wendel, Layng, Smith)",
+      "piClean": "Margaret Holstege",
+      "slug": "margaret-holstege-ordering-patterns-of-pregnancy",
+      "title": "Ordering Patterns of Pregnancy Tests",
+      "authors": null,
+      "category": "Operations",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Charlie Burgess (Layng, Smith, Taylor, Hartka)",
+      "piClean": "Charlie Burgess",
+      "slug": "charlie-burgess-who-moved-my-button-the-impac",
+      "title": "Who Moved My Button? The Impact of Reduced Hydromorphone Default Dosing on Ordering Patterns in the Emergency Department.",
+      "authors": null,
+      "category": "Operations/Pain",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Thomas Hartka",
+      "piClean": "Thomas Hartka",
+      "slug": "thomas-hartka-contextual-themes-in-firearm-i",
+      "title": "Contextual Themes in Firearm Incidents Identified Through Automated Topic Modeling ",
+      "authors": null,
+      "category": "AI",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Andrew Muck",
+      "piClean": "Andrew Muck",
+      "slug": "andrew-muck-caretaker-adverse-event-detec",
+      "title": "Caretaker: Adverse Event Detection",
+      "authors": null,
+      "category": "Wearables",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Andrew Muck",
+      "piClean": "Andrew Muck",
+      "slug": "andrew-muck-caretaker-implementation-qual",
+      "title": "Caretaker: Implementation Qualitative",
+      "authors": null,
+      "category": "Wearables",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Andrew Taylor",
+      "piClean": "Andrew Taylor",
+      "slug": "andrew-taylor-wearable-systematic-review",
+      "title": "Wearable Systematic Review",
+      "authors": null,
+      "category": "Wearables",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Andrew Taylor",
+      "piClean": "Andrew Taylor",
+      "slug": "andrew-taylor-personal-statement-analysis",
+      "title": "Personal Statement Analysis",
+      "authors": null,
+      "category": "Education/AI",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Andrew Taylor",
+      "piClean": "Andrew Taylor",
+      "slug": "andrew-taylor-topic-analysis-of-wonder-data",
+      "title": "Topic Analysis of Wonder Data Set",
+      "authors": null,
+      "category": "Gun Violence/AI",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Charlie Burgess (Wendel, Smith)",
+      "piClean": "Charlie Burgess",
+      "slug": "charlie-burgess-reassessing-emergency-departme",
+      "title": "Reassessing Emergency Department Observation After High-Sensitivity Troponin Adoption.",
+      "authors": null,
+      "category": "SDoH",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Zoe Kitchings (Wendel, Layng)",
+      "piClean": "Zoe Kitchings",
+      "slug": "zoe-kitchings-characterizing-ambulatory-to-e",
+      "title": "Characterizing Ambulatory-to-ED Referral Patterns Using an EHR-Integrated Clinic/Home Transfer Order",
+      "authors": null,
+      "category": "Operations",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Priya Goyal (Wendel, Glass, Smith)",
+      "piClean": "Priya Goyal",
+      "slug": "priya-goyal-impact-of-a-change-in-trauma-p",
+      "title": "Impact of a Change in Trauma Pan-Scan Imaging Practice on Clinical Outcomes in the Emergency Department",
+      "authors": null,
+      "category": "Operations",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Sierra Gillard (Agraz, Wendel, Chernyavskiy, Smith)",
+      "piClean": "Sierra Gillard",
+      "slug": "sierra-gillard-limb-preservation-pathway-anal",
+      "title": "Limb Preservation Pathway Analysis",
+      "authors": null,
+      "category": "Operations",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Zoe Kitchings (Wendel, Layng)",
+      "piClean": "Zoe Kitchings",
+      "slug": "zoe-kitchings-turning-clicks-into-competitio",
+      "title": "Turning Clicks into Competition: Incentivizing Consult Documentation to Optimize Patient Throughput",
+      "authors": null,
+      "category": "Operations",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Andrew Taylor",
+      "piClean": "Andrew Taylor",
+      "slug": "andrew-taylor-fhir-based-uti-model-developme",
+      "title": "FHIR Based UTI Model Development and Implementation at UVA Health System",
+      "authors": "Andrew Taylor, Jonathan Swap, Rupesh Silwal",
+      "category": "AI Infectious Disease",
+      "presentationType": "Abstract",
+      "docLink": "https://docs.google.com/document/d/1podLXhEn8xzRWU5tB_FN1tbJgYth6h2gTQK9tMj6_FU/edit?usp=sharing",
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Jacob Britton (Wendel, Smith, Farah, Holstege)",
+      "piClean": "Jacob Britton",
+      "slug": "jacob-britton-temporal-trends-of-alcohol-rel",
+      "title": "Temporal Trends of Alcohol Related Visits to the Emergency Department in the Collegiate Population",
+      "authors": null,
+      "category": "Toxicology",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Benton Spirek (UVA medical student)",
+      "piClean": "Benton Spirek",
+      "slug": "benton-spirek-pit-imaging-utilization",
+      "title": "PIT Imaging Utilization ",
+      "authors": "Thom",
+      "category": "Operations / Ultrasound",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Daniel Wu (UVA medical student)",
+      "piClean": "Daniel Wu",
+      "slug": "daniel-wu-trends-in-lumbar-puncture-util",
+      "title": "Trends in Lumbar Puncture Utilization Amongst Specialties Across a Health System",
+      "authors": "Thom",
+      "category": "Operations / Neurology",
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Sigal Tavel",
+      "piClean": "Sigal Tavel",
+      "slug": "sigal-tavel-comparing-patient-evaluation-o",
+      "title": "Comparing patient evaluation of their clinical risk of pulmonary embolism to physicians\u2019 using the Wells score: a prospective observational study",
+      "authors": null,
+      "category": null,
+      "presentationType": "Abstract",
+      "docLink": null,
+      "alsoOnPgy3Schedule": true
+    },
+    {
+      "pi": "Benton Spirek (UVA medical student)",
+      "piClean": "Benton Spirek",
+      "slug": "benton-spirek-pit-imaging-utilization-impa",
+      "title": "PIT Imaging Utilization - Impact on Abdominal Pain Evaluation",
+      "authors": "Thom",
+      "category": null,
+      "presentationType": null,
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    },
+    {
+      "pi": "Daniel Wu (UVA medical student)",
+      "piClean": "Daniel Wu",
+      "slug": "daniel-wu-ed-lumbar-puncture-volumes-t",
+      "title": "ED Lumbar Puncture Volumes - Trends in Indication and Success Rates",
+      "authors": "Thom",
+      "category": null,
+      "presentationType": null,
+      "docLink": null,
+      "alsoOnPgy3Schedule": false
+    }
+  ],
+  "dryRunPresenters": [
+    {
+      "name": "Margaret Holstege",
+      "slug": "holstege-pregnancy-testing",
+      "project": "Optimization of Pregnancy Testing in the UVA ED",
+      "mentors": [
+        "Wendel",
+        "Layng",
+        "Smith"
+      ],
+      "format": "saem-dryrun",
+      "blockTime": "11:17\u201311:29",
+      "saemAccepted": true
+    }
+  ],
+  "methodologyTypes": {
+    "prospective-observational": {
+      "label": "Prospective / Observational",
+      "color": "#0891B2",
+      "bg": "#ECFEFF"
+    },
+    "clinical-innovation": {
+      "label": "Clinical Innovation / QI",
+      "color": "#7C3AED",
+      "bg": "#F5F3FF"
+    },
+    "case-report": {
+      "label": "Case Report",
+      "color": "#DC2626",
+      "bg": "#FEF2F2"
+    },
+    "retrospective-database": {
+      "label": "Retrospective / Database",
+      "color": "#2563EB",
+      "bg": "#EFF6FF"
+    },
+    "educational-chapter": {
+      "label": "Educational / Book Chapter",
+      "color": "#059669",
+      "bg": "#ECFDF5"
+    }
+  }
+}
