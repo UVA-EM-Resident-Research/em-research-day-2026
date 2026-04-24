@@ -223,7 +223,13 @@ def build_abstract_page(entry, entry_type="pgy3"):
     <span class="sep">|</span>
     <a href="../schedule.html">Schedule</a>
     <span class="sep">|</span>
+    <a href="../presentations.html">Slides</a>
+    <span class="sep">|</span>
+    <a href="../posters.html">Posters</a>
+    <span class="sep">|</span>
     <a href="../gallery.html">All Research</a>
+    <span class="sep">|</span>
+    <a href="mailto:mtrowbridge@virginia.edu">Email Matt</a>
   </nav>
 
   <div class="abstract-header">
@@ -254,8 +260,17 @@ def build_abstract_page(entry, entry_type="pgy3"):
 {mentors_html}
   </div>
 
+  <section class="abstract-contact" style="padding:28px 40px;background:#F4EAD5;border-top:3px solid #E57200;font-family:'Inter',sans-serif;">
+    <div style="font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#E57200;margin-bottom:8px;">Questions or want to talk?</div>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:14px;color:#232D4B;margin:0 0 14px 0;max-width:580px;line-height:1.6;">Reach out any time — email me directly, or grab a 30-minute coaching or slide-update slot on the calendar.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="mailto:mtrowbridge@virginia.edu" style="padding:10px 16px;background:#232D4B;color:#F4EAD5;text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;border:1.5px solid #232D4B;">Email Matt &rarr;</a>
+      <a href="https://calendly.com/matthew-trowbridge-md-mph/research-day-prep" target="_blank" rel="noopener" style="padding:10px 16px;background:transparent;color:#232D4B;text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;border:1.5px solid #232D4B;">Book 30 min &rarr;</a>
+    </div>
+  </section>
+
   <footer class="abstract-footer">
-    UVA EM Research Day 2026 · <a href="../index.html">Event Home</a> · <a href="../schedule.html">Schedule</a> · <a href="../gallery.html">Browse All Research</a>
+    UVA EM Research Day 2026 · <a href="../index.html">Event Home</a> · <a href="../schedule.html">Schedule</a> · <a href="../presentations.html">Slides</a> · <a href="../posters.html">Posters</a> · <a href="../gallery.html">Gallery</a>
   </footer>
 
 </div>

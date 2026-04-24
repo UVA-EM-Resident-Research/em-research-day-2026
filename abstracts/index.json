@@ -1,15 +1,5 @@
 [
   {
-    "slug": "tavel-wells-pe",
-    "name": "Sigal Tavel",
-    "title": "Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score",
-    "type": "pgy3",
-    "format": "podium",
-    "methodology": "prospective-observational",
-    "hasSlides": true,
-    "hasPoster": true
-  },
-  {
     "slug": "carter-ai-scheduling",
     "name": "Michael Carter",
     "title": "AI Scheduling Comparison \u2014 Using ChatGPT and Grok to Automate Shift Scheduling",
@@ -318,5 +308,15 @@
     "methodology": "prospective-observational",
     "hasSlides": true,
     "hasPoster": false
+  },
+  {
+    "slug": "tavel-wells-pe",
+    "name": "Sigal Tavel",
+    "title": "Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score",
+    "type": "dryrun",
+    "format": "saem-dryrun",
+    "methodology": "prospective-observational",
+    "hasSlides": true,
+    "hasPoster": true
   }
 ]

@@ -440,6 +440,25 @@
     .view-toggle { display: none; }
   }
 </style>
+
+<style>
+.site-quick-nav {
+  display: flex; flex-wrap: wrap; gap: 0;
+  background: #FBF6EB; border-bottom: 1px solid #D1D5DB;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+.site-quick-nav .sqn-item {
+  flex: 1 1 120px; padding: 14px 16px; text-decoration: none;
+  color: #232D4B; border-right: 1px solid #D1D5DB;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 600; letter-spacing: 1.2px;
+  text-transform: uppercase; transition: background 0.15s;
+}
+.site-quick-nav .sqn-item:last-child { border-right: none; }
+.site-quick-nav .sqn-item:hover { background: #FFFFFF; color: #E57200; }
+.site-quick-nav .sqn-label { font-size: 11px; }
+@media (max-width: 680px) { .site-quick-nav .sqn-item { flex: 1 1 50%; border-bottom: 1px solid #D1D5DB; } }
+</style>
 </head>
 <body>
 <div class="page">
@@ -461,6 +480,16 @@
 <span>UVA Health Sciences</span>
 </div>
 </header>
+
+<nav class="site-quick-nav" aria-label="Primary">
+  <a href="index.html" class="sqn-item"><span>🏠</span><span class="sqn-label">Home</span></a>
+  <a href="schedule.html" class="sqn-item"><span>📅</span><span class="sqn-label">Schedule</span></a>
+  <a href="presentations.html" class="sqn-item"><span>🎤</span><span class="sqn-label">Slides</span></a>
+  <a href="posters.html" class="sqn-item"><span>🖼️</span><span class="sqn-label">Posters</span></a>
+  <a href="gallery.html" class="sqn-item"><span>📚</span><span class="sqn-label">SAEM Gallery</span></a>
+  <a href="mailto:mtrowbridge@virginia.edu" class="sqn-item"><span>✉️</span><span class="sqn-label">Email Matt</span></a>
+</nav>
+
 <!-- GALLERY NAV -->
 <div class="gallery-banner">
 <span>🖼️ <strong>33 research projects</strong> — tap any presenter name for details</span>
@@ -468,8 +497,7 @@
 </div>
 
   <div class="schedule-banner-note" style="padding:14px 48px; background:#FFF8F0; border-bottom:1px solid #E5E7EB; color:#78350F; font-size:13px;">
-  <strong style="color:#E57200; text-transform:uppercase; letter-spacing:1px; font-size:11px; margin-right:8px;">Heads up</strong>
-  Schedule is subject to last-minute refinement as we approach April 29 &mdash; check back for the latest.
+  <strong>Note:</strong> This is a draft schedule. Please check back next week to confirm times for specific presentations.
 </div>
 
 <!-- FORMAT KEY -->
@@ -519,13 +547,6 @@
 </div>
 </div>
 <div class="section-label">PGY-3 Formal Presentations — Block A</div>
-<div class="block">
-<div class="block-time">8:55 – 9:07<div class="duration">10+2 min</div></div>
-<div class="block-content">
-<div class="block-title"><a class="presenter-link" href="abstracts/tavel-wells-pe.html">Sigal Tavel</a> <span class="tag tag-saem">SAEM</span> <span class="tag tag-pgy3">PGY-3</span></div>
-<div class="block-desc">Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score</div>
-</div>
-</div>
 <div class="block">
 <div class="block-time">9:07 – 9:19<div class="duration">10+2 min</div></div>
 <div class="block-content">
@@ -603,11 +624,10 @@
 </div>
 </div>
 <div class="block block-highlight">
-<div class="block-time">11:29 – 11:41<div class="duration">10+2 min</div></div>
+<div class="block-time">11:52 – 12:04<div class="duration">10+2 min</div></div>
 <div class="block-content">
-<div class="block-title">TBD — Dry-Run Slot #2 <span class="tag tag-saem">SAEM</span></div>
-
-<div class="block-desc">Speaker to be announced</div>
+<div class="block-title"><a class="presenter-link" href="abstracts/tavel-wells-pe.html">Sigal Tavel</a> <span class="tag tag-saem">SAEM</span></div>
+<div class="block-desc">Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score</div>
 </div>
 </div>
 <div class="section-label">Closing</div>
@@ -638,6 +658,17 @@
 <!-- DECISIONS (planning only) -->
 
 <!-- FOOTER -->
+
+<section class="site-contact" style="padding: 36px 48px; background: #F4EAD5; color: #232D4B; border-top: 3px solid #E57200; font-family: 'Inter', -apple-system, sans-serif;">
+  <div style="font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #E57200; margin-bottom: 10px;">Questions or want to talk?</div>
+  <h3 style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 500; color: #232D4B; margin: 0 0 10px 0; max-width: 640px;">Residents, mentors, staff — reach out any time.</h3>
+  <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.6; margin: 0 0 18px 0; max-width: 640px;">Questions about the morning, a schedule conflict, slides you want to workshop, a poster that needs another pair of eyes — any of it. Email directly or grab 30 minutes on the calendar.</p>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+    <a href="mailto:mtrowbridge@virginia.edu" style="display: inline-flex; padding: 12px 20px; background: #232D4B; color: #F4EAD5; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1.3px; text-transform: uppercase; border: 1.5px solid #232D4B;">Email Matt &rarr;</a>
+    <a href="https://calendly.com/matthew-trowbridge-md-mph/research-day-prep" target="_blank" rel="noopener" style="display: inline-flex; padding: 12px 20px; background: transparent; color: #232D4B; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1.3px; text-transform: uppercase; border: 1.5px solid #232D4B;">Book 30 min &rarr;</a>
+  </div>
+</section>
+
 <footer class="footer">
 <div class="footer-left">UVA Department of Emergency Medicine</div>
 

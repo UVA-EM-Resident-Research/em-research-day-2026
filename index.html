@@ -144,6 +144,40 @@
     line-height: 1.4;
   }
 
+  
+  /* ═══ QUICK NAV ═══ */
+  .quick-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 1px solid var(--gray-300);
+    background: var(--cream-soft);
+  }
+  .quick-nav a {
+    padding: 20px 24px;
+    text-decoration: none;
+    color: var(--navy);
+    border-right: 1px solid var(--gray-300);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: background 0.15s ease;
+  }
+  .quick-nav a:last-child { border-right: none; }
+  .quick-nav a:hover { background: var(--white); }
+  .quick-nav .qn-icon { font-size: 20px; opacity: 0.85; }
+  .quick-nav .qn-label {
+    font-size: 12px; font-weight: 600; letter-spacing: 1.4px;
+    text-transform: uppercase; color: var(--navy); line-height: 1;
+  }
+  .quick-nav .qn-sub {
+    display: block; font-size: 11px; color: var(--gray-500);
+    margin-top: 3px; font-weight: 400;
+  }
+  @media (max-width: 760px) {
+    .quick-nav { grid-template-columns: repeat(2, 1fr); }
+    .quick-nav a { border-bottom: 1px solid var(--gray-300); }
+  }
+
   /* ═══ MISSION ═══ */
   .mission {
     padding: 72px 72px 56px;
@@ -523,6 +557,45 @@
     color: var(--navy);
   }
 
+  
+  /* ═══ CONTACT ═══ */
+  .contact-block {
+    padding: 64px 72px;
+    background: var(--cream);
+    color: var(--navy);
+    border-top: 3px solid var(--orange);
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .contact-block .eyebrow { color: var(--orange); margin-bottom: 18px; }
+  .contact-block h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 28px; line-height: 1.3; font-weight: 500;
+    color: var(--navy); letter-spacing: -0.3px; margin-bottom: 16px;
+    max-width: 700px;
+  }
+  .contact-block p {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px; line-height: 1.7; color: var(--navy);
+    max-width: 680px; margin-bottom: 24px;
+  }
+  .contact-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .contact-ctas a {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 22px; font-family: 'Inter', sans-serif;
+    font-size: 12px; font-weight: 600; letter-spacing: 1.4px;
+    text-transform: uppercase; text-decoration: none;
+    border: 1.5px solid transparent; transition: all 0.15s;
+  }
+  .cta-primary { background: var(--navy); color: var(--cream); border-color: var(--navy); }
+  .cta-primary:hover { background: var(--orange); border-color: var(--orange); }
+  .cta-ghost { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .cta-ghost:hover { background: var(--navy); color: var(--cream); }
+  .contact-ctas a::after { content: ' →'; }
+  @media (max-width: 760px) {
+    .contact-block { padding: 48px 32px; }
+    .contact-block h2 { font-size: 22px; }
+  }
+
   /* ═══ FOOTER ═══ */
   .footer {
     padding: 48px 72px 40px;
@@ -636,6 +709,15 @@
     </div>
   </section>
 
+  <!-- ══════════ QUICK NAV ══════════ -->
+  <nav class="quick-nav" aria-label="Primary">
+    <a href="#schedule"><span class="qn-icon">📅</span><span><span class="qn-label">Schedule</span><span class="qn-sub">Full program</span></span></a>
+    <a href="presentations.html"><span class="qn-icon">🎤</span><span><span class="qn-label">Slides</span><span class="qn-sub">8 decks</span></span></a>
+    <a href="posters.html"><span class="qn-icon">🖼️</span><span><span class="qn-label">Posters</span><span class="qn-sub">10 posters</span></span></a>
+    <a href="gallery.html"><span class="qn-icon">📚</span><span><span class="qn-label">SAEM Gallery</span><span class="qn-sub">All abstracts</span></span></a>
+    <a href="mailto:mtrowbridge@virginia.edu"><span class="qn-icon">✉️</span><span><span class="qn-label">Email Matt</span><span class="qn-sub">Questions welcome</span></span></a>
+  </nav>
+
   <!-- ══════════ MISSION ══════════ -->
   <section class="mission">
     <div class="sc eyebrow">The Point of the Morning</div>
@@ -689,8 +771,7 @@
     <h2>Here's the shape of the morning.</h2>
 
     <div class="schedule-note">
-      <span class="schedule-note-mark">Heads up</span>
-      Schedule is subject to last-minute refinement as we approach April 29 &mdash; check back for the latest.
+      <strong>Note:</strong> This is a draft schedule. Please check back next week to confirm times for specific presentations.
     </div>
 
     <div class="schedule-rows">
@@ -779,11 +860,6 @@
       <div class="presenter-block-label">Podium Presentations</div>
       <div class="presenter-grid">
         <div class="presenter">
-          <a href="abstracts/tavel-wells-pe.html" class="p-name-link"><span class="p-name">Sigal Tavel, MD</span></a>
-          <div class="p-topic">Patient vs. Physician PE Risk Assessment Using the Wells Score</div>
-          <span class="p-mentor">Mentor &middot; Dr. Sigal (Faculty)</span>
-        </div>
-        <div class="presenter">
           <a href="abstracts/carter-ai-scheduling.html" class="p-name-link"><span class="p-name">Michael Carter, MD</span></a>
           <div class="p-topic">AI Scheduling Comparison &mdash; ChatGPT &amp; Grok for Shift Automation</div>
           <span class="p-mentor">Mentors &middot; Drs. Layng, Smith, Hartka</span>
@@ -846,8 +922,8 @@
           <div class="p-topic">Optimization of Pregnancy Testing in the UVA ED</div>
         </div>
         <div class="presenter">
-          <span class="p-name">Dress-Rehearsal Slot #2</span>
-          <div class="p-topic">To be announced &mdash; priority to first-time SAEM presenters</div>
+          <a href="abstracts/tavel-wells-pe.html" class="p-name-link"><span class="p-name">Sigal Tavel, MD</span></a>
+          <div class="p-topic">Patient vs. Physician PE Risk Assessment Using the Wells Score</div>
         </div>
       </div>
     </div>
@@ -880,14 +956,28 @@
     </div>
   </section>
 
+  
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="contact-block">
+    <div class="sc eyebrow">Questions, or want to talk?</div>
+    <h2>Every resident, mentor, and staff member is welcome to reach out.</h2>
+    <p>Questions about the morning, a conflict on your schedule, slides you'd like to workshop, a poster you want another pair of eyes on &mdash; any of it. Email directly, or grab a 30-minute coaching or slide-update slot on the calendar.</p>
+    <div class="contact-ctas">
+      <a class="cta-primary" href="mailto:mtrowbridge@virginia.edu">Email Matt</a>
+      <a class="cta-ghost" href="https://calendly.com/matthew-trowbridge-md-mph/research-day-prep" target="_blank" rel="noopener">Book 30 min on Calendly</a>
+    </div>
+  </section>
+
   <!-- ══════════ FOOTER ══════════ -->
   <footer class="footer">
     <div class="footer-top">
       <h3>See you April 29.</h3>
       <nav class="footer-links">
-        <a href="schedule.html?view=public">Schedule</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="presentations.html">Slides</a>
+        <a href="posters.html">Posters</a>
         <a href="gallery.html">SAEM Gallery</a>
-        <a href="#residents">Residents</a>
+        <a href="mailto:mtrowbridge@virginia.edu">Email</a>
       </nav>
     </div>
     <div class="footer-bottom">
