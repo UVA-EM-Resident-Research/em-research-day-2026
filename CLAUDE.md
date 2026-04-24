@@ -40,9 +40,10 @@ Jefferson Blue `#232D4B` · Rotunda Orange `#E57200` · UVA Cream `#F4EAD5`. Sou
 ## Working principles
 
 - **Speed > polish.** The site went from idea to live in the same week as the event. Iterate, ship, revise.
-- **Every graduating PGY-3 presents something.** Seven podium talks + five posters/lightning + dress rehearsals — every resident is visible.
+- **No value-judgement language.** All formats (podium, poster, lightning, gallery, dress rehearsal) are equally celebrated. Do not use "best," "strongest," "top," "premier," "standout," or spectrum framings like "in-progress → peak." The format mix exists to keep the morning fresh, not to rank. Do not imply universal PGY-3 participation — the 4 residents not on the program this year should feel no pressure or shame. Describe formats by what they ARE (duration, style, content type), never by relative quality.
 - **Faculty mentorship is a named value.** The site should read as a celebration of mentor + resident pairs, not of individuals.
 - **Forwardable standard** (from the `uva-em-voice` skill): any copy on the site should read fine if printed and slid across a table to the Department Chair.
+- **No planning notes in public content.** Internal notes like "needs confirmation," "Heather flagged as…," or "strongest of the bunch" belong only in the private planning folder, never in `data.json`, HTML copy, or JS. When adding fields to `data.json`, ask: "would I be comfortable with this being read by a PI mentioned on that page?" If no, don't commit it.
 
 ## Voice & copy conventions
 

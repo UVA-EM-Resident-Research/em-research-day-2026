@@ -246,6 +246,30 @@
     color: #4B5563;
   }
 
+  
+  .schedule-note {
+    background: #FFF8F0;
+    border-left: 3px solid var(--orange);
+    padding: 14px 18px;
+    margin-bottom: 32px;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #78350F;
+    max-width: 720px;
+    border-radius: 2px;
+  }
+  .schedule-note-mark {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-right: 10px;
+  }
   /* ═══ SCHEDULE PREVIEW ═══ */
   .schedule-preview {
     padding: 64px 72px;
@@ -426,6 +450,20 @@
     margin-top: 4px;
     opacity: 0.82;
   }
+  .p-name-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color 0.15s ease;
+  }
+  .p-name-link:hover .p-name {
+    color: var(--orange);
+  }
+  .p-name-link:hover .p-name::after {
+    content: ' →';
+    opacity: 0.7;
+    font-size: 0.85em;
+  }
 
   /* ═══ MENTORSHIP ═══ */
   .mentorship {
@@ -575,7 +613,7 @@
         <path d="M0 4 L80 4 L95 4 L100 1 L108 7 L115 4 L260 4" stroke="#E57200" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
 
-      <p class="tagline">A morning to share the year's research across our department &mdash; from protocols in progress to work headed for SAEM &mdash; and to celebrate the residents and faculty who made it.</p>
+      <p class="tagline">A morning to share the year's research across our department and to celebrate the residents and faculty behind it.</p>
 
       <div class="hero-meta">
         <div class="hero-meta-item">
@@ -601,10 +639,10 @@
   <!-- ══════════ MISSION ══════════ -->
   <section class="mission">
     <div class="sc eyebrow">The Point of the Morning</div>
-    <h2>Research in every stage &mdash; shared out loud, together.</h2>
-    <p>Research Day 2026 is not a gauntlet. It is a morning for our department to <span class="highlight">see the breadth</span> of what's underway &mdash; protocols still forming, case reports mid-write, QI projects shipping, abstracts accepted at SAEM, and book chapters hitting print.</p>
-    <p>The format is deliberately mixed: <span class="highlight">podium talks, posters, lightning rounds, a dress rehearsal for SAEM, and a gallery wall</span> of every accepted abstract from the department. Every graduating PGY-3 presents something. Every faculty mentor gets to see their residents in front of the room.</p>
-    <p>Come for the full morning if you can. Come for coffee and the gallery if that's what the day allows. Either way &mdash; come.</p>
+    <h2>Research in every stage &mdash; shared and celebrated together with a focus on resident research.</h2>
+    <p>Research Day 2026 is a morning for our department to gather and see a diverse sample of projects underway.</p>
+    <p>The format is deliberately mixed: <span class="highlight">podium talks, posters, lightning rounds, a dress rehearsal for SAEM, case studies and book chapters now in print, and a gallery wall</span> of every accepted abstract from the department.</p>
+    <p>Come for the full morning if you can to support our resident presenters and discussants. Or, just come for coffee and the gallery if that's what the day allows. But, either way &mdash; please come!</p>
   </section>
 
   <!-- ══════════ FORMAT PILLARS ══════════ -->
@@ -618,14 +656,14 @@
         <div class="count">7</div>
         <div class="count-unit">Podium Talks</div>
         <h3>PGY-3 Formal Presentations</h3>
-        <p>Ten minutes plus two minutes of Q&amp;A. The strongest full-cycle projects from the graduating class, presented at the front of the room.</p>
+        <p>Ten minutes plus two minutes of Q&amp;A. Full-cycle projects from graduating residents.</p>
       </article>
 
       <article class="pillar">
         <div class="count">5</div>
         <div class="count-unit">Posters + Lightning</div>
-        <h3>Book Chapters, Cases &amp; Early-Stage Work</h3>
-        <p>A two-minute verbal hook from the podium, then a poster to gather around during the gallery walk. Works-in-progress welcome.</p>
+        <h3>Case Reports, Articles &amp; Book Chapters</h3>
+        <p>A two-minute verbal hook from the podium, then a poster to gather around during the gallery walk.</p>
       </article>
 
       <article class="pillar">
@@ -639,7 +677,7 @@
         <div class="count">2</div>
         <div class="count-unit">SAEM Dry-Runs</div>
         <h3>Conference-Ready Rehearsals</h3>
-        <p>A friendly room, a live audience, and real Q&amp;A &mdash; the best possible warm-up before Phoenix in May.</p>
+        <p>A friendly room, a live audience, and real Q&amp;A &mdash; a warm-up before Phoenix in May.</p>
       </article>
 
     </div>
@@ -649,6 +687,11 @@
   <section class="schedule-preview" id="schedule">
     <div class="sc eyebrow">Program at a Glance</div>
     <h2>Here's the shape of the morning.</h2>
+
+    <div class="schedule-note">
+      <span class="schedule-note-mark">Heads up</span>
+      Schedule is subject to last-minute refinement as we approach April 29 &mdash; check back for the latest.
+    </div>
 
     <div class="schedule-rows">
 
@@ -728,45 +771,40 @@
 
   <!-- ══════════ PRESENTERS ══════════ -->
   <section class="presenters" id="residents">
-    <div class="sc eyebrow">Our Graduating Class</div>
-    <h2>Thirteen PGY-3 residents. A year of questions, asked in every direction.</h2>
-    <p class="lede">Every graduating resident presents something &mdash; a podium talk, a poster, a lightning round, or a case they want to open up for discussion. Mentors will be in the room for every one.</p>
+    <div class="sc eyebrow">Presenting This Morning</div>
+    <h2>A year of research, shared in multiple formats.</h2>
+    <p class="lede">A mix of podium talks, posters, lightning rounds, and cases open for discussion. Mentors will be in the room for every one.</p>
 
     <div class="presenter-block">
       <div class="presenter-block-label">Podium Presentations</div>
       <div class="presenter-grid">
         <div class="presenter">
-          <span class="p-name">Sigal Tavel, MD</span>
+          <a href="abstracts/tavel-wells-pe.html" class="p-name-link"><span class="p-name">Sigal Tavel, MD</span></a>
           <div class="p-topic">Patient vs. Physician PE Risk Assessment Using the Wells Score</div>
           <span class="p-mentor">Mentor &middot; Dr. Sigal (Faculty)</span>
         </div>
         <div class="presenter">
-          <span class="p-name">Michael Carter, MD</span>
+          <a href="abstracts/carter-ai-scheduling.html" class="p-name-link"><span class="p-name">Michael Carter, MD</span></a>
           <div class="p-topic">AI Scheduling Comparison &mdash; ChatGPT &amp; Grok for Shift Automation</div>
           <span class="p-mentor">Mentors &middot; Drs. Layng, Smith, Hartka</span>
         </div>
         <div class="presenter">
-          <span class="p-name">Paul Kim, MD</span>
+          <a href="abstracts/kim-systematic-review.html" class="p-name-link"><span class="p-name">Paul Kim, MD</span></a>
           <div class="p-topic">Systematic Review &mdash; accepted at Annals of Emergency Medicine</div>
           <span class="p-mentor">Mentor &middot; Dr. Sochor</span>
         </div>
         <div class="presenter">
-          <span class="p-name">Nicholas McKean, MD</span>
+          <a href="abstracts/mckean-whole-blood.html" class="p-name-link"><span class="p-name">Nicholas McKean, MD</span></a>
           <div class="p-topic">Whole Blood Protocol for EM/Trauma &mdash; added to the UVA Trauma Manual</div>
           <span class="p-mentor">Mentor &middot; Dr. Park</span>
         </div>
         <div class="presenter">
-          <span class="p-name">Matthew Britton, MD</span>
+          <a href="abstracts/britton-alcohol-ed.html" class="p-name-link"><span class="p-name">Matthew Britton, MD</span></a>
           <div class="p-topic">Temporal Trends in Alcohol-Related ED Visits &mdash; Collegiate Population</div>
           <span class="p-mentor">Mentor &middot; Dr. Holstege</span>
         </div>
         <div class="presenter">
-          <span class="p-name">Gabriella Dean, MD</span>
-          <div class="p-topic">Atrial Fibrillation AgileMD Pathway + Clinical Case</div>
-          <span class="p-mentor">Mentor &middot; Dr. Dean</span>
-        </div>
-        <div class="presenter">
-          <span class="p-name">Michael Larsen, MD</span>
+          <a href="abstracts/larsen-dietls-crisis.html" class="p-name-link"><span class="p-name">Michael Larsen, MD</span></a>
           <div class="p-topic">Dietl's Crisis &mdash; Clinical Case Report</div>
           <span class="p-mentor">Mentor &middot; Dr. Sochor</span>
         </div>
@@ -777,24 +815,24 @@
       <div class="presenter-block-label">Posters &amp; Lightning Round</div>
       <div class="presenter-grid">
         <div class="presenter">
-          <span class="p-name">Ethan Smolley, MD</span>
+          <a href="abstracts/smolley-peds-cases.html" class="p-name-link"><span class="p-name">Ethan Smolley, MD</span></a>
           <div class="p-topic">Pediatric EM Cases &mdash; Book Chapter</div>
         </div>
         <div class="presenter">
-          <span class="p-name">Joel Buenrostro, MD</span>
+          <a href="abstracts/buenrostro-torsion.html" class="p-name-link"><span class="p-name">Joel Buenrostro, MD</span></a>
           <div class="p-topic">Testicular Torsion &mdash; Book Chapter</div>
         </div>
         <div class="presenter">
-          <span class="p-name">Daniel Rivera, MD</span>
+          <a href="abstracts/rivera-junctional-tachycardia.html" class="p-name-link"><span class="p-name">Daniel Rivera, MD</span></a>
           <div class="p-topic">Junctional Tachycardia &mdash; Article</div>
         </div>
         <div class="presenter">
-          <span class="p-name">Jennifer Loehner, MD</span>
+          <a href="abstracts/loehner-cardiac-glycoside.html" class="p-name-link"><span class="p-name">Jennifer Loehner, MD</span></a>
           <div class="p-topic">Cardiac Glycoside Toxicology &mdash; VACEP Poster</div>
           <span class="p-mentor">Mentor &middot; Dr. Holstege</span>
         </div>
         <div class="presenter">
-          <span class="p-name">Zunaira Arbab, MD</span>
+          <a href="abstracts/arbab-forensic-nurses.html" class="p-name-link"><span class="p-name">Zunaira Arbab, MD</span></a>
           <div class="p-topic">Forensic Nurse Examiners &mdash; Published Article</div>
         </div>
       </div>
@@ -804,7 +842,7 @@
       <div class="presenter-block-label">SAEM Dress Rehearsal</div>
       <div class="presenter-grid">
         <div class="presenter">
-          <span class="p-name">Margaret Holstege, MD</span>
+          <a href="abstracts/holstege-pregnancy-testing.html" class="p-name-link"><span class="p-name">Margaret Holstege, MD</span></a>
           <div class="p-topic">Optimization of Pregnancy Testing in the UVA ED</div>
         </div>
         <div class="presenter">

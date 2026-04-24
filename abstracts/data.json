@@ -9,25 +9,27 @@
         "Easter"
       ],
       "format": "podium",
-      "blockTime": "8:55\u20139:07",
+      "blockTime": "8:55–9:07",
       "methodology": "prospective-observational",
       "saemAccepted": true,
-      "notes": "Strongest presentation-ready project"
+      "slidesUrl": "presentations/tavel-wells-pe-slides.pdf",
+      "posterUrl": "presentations/tavel-wells-pe-poster.pdf"
     },
     {
       "name": "Michael Carter",
       "slug": "carter-ai-scheduling",
-      "project": "AI Scheduling Comparison \u2014 Using ChatGPT and Grok to Automate Shift Scheduling",
+      "project": "AI Scheduling Comparison — Using ChatGPT and Grok to Automate Shift Scheduling",
       "mentors": [
         "Layng",
         "Smith",
         "Hartka"
       ],
       "format": "podium",
-      "blockTime": "9:07\u20139:19",
+      "blockTime": "9:07–9:19",
       "methodology": "clinical-innovation",
       "saemAccepted": true,
-      "notes": "SAEM innovation submission; Heather flagged as most motivated"
+      "slidesUrl": "presentations/carter-ai-scheduling-slides.pdf",
+      "posterUrl": "presentations/carter-ai-scheduling-poster.pdf"
     },
     {
       "name": "Paul Kim",
@@ -38,28 +40,28 @@
         "Britt Long"
       ],
       "format": "podium",
-      "blockTime": "9:19\u20139:31",
+      "blockTime": "9:19–9:31",
       "methodology": "retrospective-database",
       "saemAccepted": false,
-      "notes": "Accepted at Annals of Emergency Medicine"
+      "slidesUrl": "presentations/kim-systematic-review-slides.pdf"
     },
     {
       "name": "Nicholas McKean",
       "slug": "mckean-whole-blood",
-      "project": "Whole Blood Protocol for EM/Trauma \u2014 Development and Addition to UVA Trauma Manual",
+      "project": "Whole Blood Protocol for EM/Trauma — Development and Addition to UVA Trauma Manual",
       "mentors": [
         "Lindbeck"
       ],
       "format": "podium",
-      "blockTime": "9:31\u20139:43",
+      "blockTime": "9:31–9:43",
       "methodology": "clinical-innovation",
       "saemAccepted": false,
-      "notes": ""
+      "slidesUrl": "presentations/mckean-whole-blood-slides.pdf"
     },
     {
       "name": "Matthew Britton",
       "slug": "britton-alcohol-ed",
-      "project": "Alcohol-Related ED Visits in the Collegiate Population \u2014 Temporal Trends Analysis",
+      "project": "Alcohol-Related ED Visits in the Collegiate Population — Temporal Trends Analysis",
       "mentors": [
         "Wendel",
         "Smith",
@@ -67,102 +69,88 @@
         "Holstege"
       ],
       "format": "podium",
-      "blockTime": "9:53\u201310:05",
+      "blockTime": "9:53–10:05",
       "methodology": "retrospective-database",
       "saemAccepted": true,
-      "notes": "Needs confirmation \u2014 no intake form on file"
-    },
-    {
-      "name": "Gabriella Dean",
-      "slug": "dean-afib-pathway",
-      "project": "Atrial Fibrillation AgileMD Pathway + Case Report",
-      "mentors": [
-        "Winston Wu",
-        "Easter"
-      ],
-      "format": "podium",
-      "blockTime": "10:05\u201310:17",
-      "methodology": "clinical-innovation",
-      "saemAccepted": false,
-      "notes": "Accepted as poster at national conference"
+      "slidesUrl": "presentations/britton-alcohol-ed-slides.pdf"
     },
     {
       "name": "Michael Larsen",
       "slug": "larsen-dietls-crisis",
-      "project": "Dietl's Crisis \u2014 Case Report",
+      "project": "Dietl's Crisis — Case Report",
       "mentors": [
         "Thom"
       ],
       "format": "podium",
-      "blockTime": "10:17\u201310:29",
+      "blockTime": "10:17–10:29",
       "methodology": "case-report",
       "saemAccepted": false,
-      "notes": ""
+      "slidesUrl": "presentations/larsen-dietls-crisis-slides.pdf"
     },
     {
       "name": "Ethan Smolley",
       "slug": "smolley-peds-cases",
-      "project": "Pediatric EM Cases \u2014 Book Chapter",
+      "project": "Pediatric EM Cases — Book Chapter",
       "mentors": [
         "Easter"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29\u201310:47",
+      "blockTime": "10:29–10:47",
       "methodology": "educational-chapter",
       "saemAccepted": false,
-      "notes": ""
+      "posterUrl": "presentations/smolley-peds-cases-poster.pdf"
     },
     {
       "name": "Joel Buenrostro",
       "slug": "buenrostro-torsion",
-      "project": "Testicular Torsion \u2014 Book Chapter",
+      "project": "Testicular Torsion — Book Chapter",
       "mentors": [
         "Easter"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29\u201310:47",
+      "blockTime": "10:29–10:47",
       "methodology": "educational-chapter",
       "saemAccepted": false,
-      "notes": ""
+      "posterUrl": "presentations/buenrostro-torsion-poster.pdf"
     },
     {
       "name": "Daniel Rivera",
       "slug": "rivera-junctional-tachycardia",
-      "project": "Junctional Tachycardia \u2014 Article",
+      "project": "Junctional Tachycardia — Article",
       "mentors": [
         "Vandersteenhoven"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29\u201310:47",
+      "blockTime": "10:29–10:47",
       "methodology": "case-report",
       "saemAccepted": false,
-      "notes": ""
+      "posterUrl": "presentations/rivera-junctional-tachycardia-poster.pdf"
     },
     {
       "name": "Jennifer Loehner",
       "slug": "loehner-cardiac-glycoside",
-      "project": "Cardiac Glycoside Toxicology \u2014 VACEP Poster",
+      "project": "Cardiac Glycoside Toxicology — VACEP Poster",
       "mentors": [
         "TBD"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29\u201310:47",
+      "blockTime": "10:29–10:47",
       "methodology": "case-report",
       "saemAccepted": false,
-      "notes": "Needs mentor confirmation"
+      "posterUrl": "presentations/loehner-cardiac-glycoside-poster.pdf"
     },
     {
       "name": "Zunaira Arbab",
       "slug": "arbab-forensic-nurses",
-      "project": "Forensic Nurse Examiners \u2014 Published Article",
+      "project": "Forensic Nurse Examiners — Published Article",
       "mentors": [
         "TBD"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29\u201310:47",
+      "blockTime": "10:29–10:47",
       "methodology": "retrospective-database",
       "saemAccepted": false,
-      "notes": "Published article; needs mentor confirmation"
+      "posterUrl": "presentations/arbab-forensic-nurses-poster.pdf"
     }
   ],
   "saemGallery": [
@@ -175,7 +163,8 @@
       "category": "Pediatrics",
       "presentationType": "Abstract",
       "docLink": null,
-      "alsoOnPgy3Schedule": false
+      "alsoOnPgy3Schedule": false,
+      "posterUrl": "presentations/samuel-reed-academic-year-patterns-in-pedi-poster.pdf"
     },
     {
       "pi": "Margaret Holstege (Wendel, Layng, Smith)",
@@ -285,7 +274,8 @@
       "category": "Operations",
       "presentationType": "Abstract",
       "docLink": null,
-      "alsoOnPgy3Schedule": false
+      "alsoOnPgy3Schedule": false,
+      "posterUrl": "presentations/zoe-kitchings-characterizing-ambulatory-to-e-poster.pdf"
     },
     {
       "pi": "Priya Goyal (Wendel, Glass, Smith)",
@@ -307,7 +297,8 @@
       "category": "Operations",
       "presentationType": "Abstract",
       "docLink": null,
-      "alsoOnPgy3Schedule": false
+      "alsoOnPgy3Schedule": false,
+      "slidesUrl": "presentations/sierra-gillard-limb-preservation-pathway-anal-slides.pdf"
     },
     {
       "pi": "Zoe Kitchings (Wendel, Layng)",
@@ -318,7 +309,8 @@
       "category": "Operations",
       "presentationType": "Abstract",
       "docLink": null,
-      "alsoOnPgy3Schedule": false
+      "alsoOnPgy3Schedule": false,
+      "posterUrl": "presentations/zoe-kitchings-turning-clicks-into-competitio-poster.pdf"
     },
     {
       "pi": "Andrew Taylor",
@@ -368,7 +360,7 @@
       "pi": "Sigal Tavel",
       "piClean": "Sigal Tavel",
       "slug": "sigal-tavel-comparing-patient-evaluation-o",
-      "title": "Comparing patient evaluation of their clinical risk of pulmonary embolism to physicians\u2019 using the Wells score: a prospective observational study",
+      "title": "Comparing patient evaluation of their clinical risk of pulmonary embolism to physicians’ using the Wells score: a prospective observational study",
       "authors": null,
       "category": null,
       "presentationType": "Abstract",
@@ -409,8 +401,9 @@
         "Smith"
       ],
       "format": "saem-dryrun",
-      "blockTime": "11:17\u201311:29",
-      "saemAccepted": true
+      "blockTime": "11:17–11:29",
+      "saemAccepted": true,
+      "slidesUrl": "presentations/holstege-pregnancy-testing-slides.pdf"
     }
   ],
   "methodologyTypes": {

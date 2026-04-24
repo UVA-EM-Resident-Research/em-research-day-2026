@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""Generate research overview pages from data.json manifest."""
+"""Generate research overview pages from data.json manifest.
+
+Each page:
+  - Title, authors, method badge, tags
+  - Presentation Details card (time, format, date)
+  - Presentation Materials: inline-embedded slides and/or poster PDFs (if available)
+  - Mentors & Collaborators
+
+Run from repo root: `python3 generate.py`
+"""
 import json, os, html as html_mod
 
 SITE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -32,39 +41,50 @@ def format_icon(fmt):
     }
     return icons.get(fmt, "📄")
 
-# ── Method-specific section templates ──
-def method_sections(methodology):
-    templates = {
-        "prospective-observational": [
-            ("Research Question", None),
-            ("Study Design & Methods", None),
-            ("Key Findings", None),
-            ("Clinical Significance", None),
-        ],
-        "clinical-innovation": [
-            ("Problem Statement", None),
-            ("Innovation Description", None),
-            ("Implementation & Impact", None),
-            ("Lessons Learned", None),
-        ],
-        "case-report": [
-            ("Clinical Scenario", None),
-            ("Key Findings", None),
-            ("Teaching Points", None),
-        ],
-        "retrospective-database": [
-            ("Research Question", None),
-            ("Data Source & Methods", None),
-            ("Key Findings", None),
-            ("Implications", None),
-        ],
-        "educational-chapter": [
-            ("Scope & Topic", None),
-            ("Key Contributions", None),
-            ("Publication Status", None),
-        ],
-    }
-    return templates.get(methodology, [("Abstract", None)])
+
+def materials_section(entry):
+    """Render embedded slides / poster PDF viewers when available."""
+    slides = entry.get("slidesUrl")
+    poster = entry.get("posterUrl")
+    if not slides and not poster:
+        return ""
+
+    blocks = []
+    if slides:
+        slides_rel = "../" + slides
+        blocks.append(f'''
+      <div class="material-block">
+        <div class="material-label">🎤 Slides (draft)</div>
+        <div class="material-frame">
+          <embed src="{esc(slides_rel)}#toolbar=0&navpanes=0" type="application/pdf" width="100%" height="560" />
+        </div>
+        <div class="material-links">
+          <a href="{esc(slides_rel)}" target="_blank" rel="noopener">Open in new tab</a>
+          <span class="sep">·</span>
+          <a href="{esc(slides_rel)}" download>Download PDF</a>
+        </div>
+      </div>''')
+    if poster:
+        poster_rel = "../" + poster
+        blocks.append(f'''
+      <div class="material-block">
+        <div class="material-label">🖼️ Poster (draft)</div>
+        <div class="material-frame">
+          <embed src="{esc(poster_rel)}#toolbar=0&navpanes=0" type="application/pdf" width="100%" height="560" />
+        </div>
+        <div class="material-links">
+          <a href="{esc(poster_rel)}" target="_blank" rel="noopener">Open in new tab</a>
+          <span class="sep">·</span>
+          <a href="{esc(poster_rel)}" download>Download PDF</a>
+        </div>
+      </div>''')
+
+    return f'''
+    <div class="section">
+      <div class="section-title">Presentation Materials</div>
+      <div class="materials-note">Working drafts — presenters may refine before April 29. PDFs open in your browser; use the links to open in a new tab or download.</div>
+      {"".join(blocks)}
+    </div>'''
 
 
 def build_abstract_page(entry, entry_type="pgy3"):
@@ -78,7 +98,6 @@ def build_abstract_page(entry, entry_type="pgy3"):
         fmt = entry.get("format", "podium")
         block_time = entry.get("blockTime", "")
         saem = entry.get("saemAccepted", False)
-        notes = entry.get("notes", "")
         category = ""
         authors_str = ""
     elif entry_type == "saem":
@@ -86,14 +105,12 @@ def build_abstract_page(entry, entry_type="pgy3"):
         title = entry["title"]
         slug = entry["slug"]
         mentors = []
-        methodology = "retrospective-database"  # default for SAEM
+        methodology = "retrospective-database"
         fmt = "saem-gallery"
         block_time = "On display all morning"
         saem = True
-        notes = ""
         category = entry.get("category", "")
         authors_str = entry.get("authors", "") or ""
-        # Parse mentors from pi field
         pi_full = entry.get("pi", "")
         if "(" in pi_full:
             mentor_part = pi_full.split("(")[1].rstrip(")")
@@ -107,12 +124,10 @@ def build_abstract_page(entry, entry_type="pgy3"):
         fmt = entry.get("format", "saem-dryrun")
         block_time = entry.get("blockTime", "")
         saem = True
-        notes = ""
         category = ""
         authors_str = ""
 
     method = METHOD_META.get(methodology, {"label": methodology, "color": "#6b7280", "bg": "#f3f4f6"})
-    sections = method_sections(methodology)
 
     # Build tags
     tags_html = ""
@@ -131,10 +146,11 @@ def build_abstract_page(entry, entry_type="pgy3"):
     if category:
         tags_html += f'<span class="tag tag-category">{esc(category)}</span>'
 
-    # Mentors HTML
+    # Mentors HTML (skip TBD placeholders)
+    clean_mentors = [m for m in mentors if m and m != "TBD"]
     mentors_html = ""
-    if mentors and mentors != ["TBD"]:
-        chips = "".join(f'<span class="mentor-chip">Dr. {esc(m)}</span>' for m in mentors)
+    if clean_mentors:
+        chips = "".join(f'<span class="mentor-chip">Dr. {esc(m)}</span>' for m in clean_mentors)
         mentors_html = f'''
     <div class="section">
       <div class="section-title">Mentors &amp; Collaborators</div>
@@ -144,34 +160,23 @@ def build_abstract_page(entry, entry_type="pgy3"):
     # Authors line
     if authors_str:
         authors_line = f'<div class="authors">with {esc(authors_str)}</div>'
-    elif mentors and mentors != ["TBD"]:
-        authors_line = f'<div class="authors"><strong>{esc(name)}</strong> · Faculty: {", ".join(esc(m) for m in mentors)}</div>'
+    elif clean_mentors:
+        authors_line = f'<div class="authors"><strong>{esc(name)}</strong> · Faculty: {", ".join(esc(m) for m in clean_mentors)}</div>'
     else:
         authors_line = f'<div class="authors"><strong>{esc(name)}</strong></div>'
 
-    # Sections HTML
-    sections_html = ""
-    for sec_title, sec_content in sections:
-        if sec_content:
-            sections_html += f'''
-    <div class="section">
-      <div class="section-title">{esc(sec_title)}</div>
-      <div class="section-content">{esc(sec_content)}</div>
-    </div>'''
-        else:
-            sections_html += f'''
-    <div class="section">
-      <div class="section-title">{esc(sec_title)}</div>
-      <div class="section-content placeholder">Details will be available soon — check back as presenters finalize their materials.</div>
-    </div>'''
+    # Presentation materials
+    materials_html = materials_section(entry)
 
-    # Notes (planning only)
-    notes_html = ""
-    if notes:
-        notes_html = f'''
-    <div class="section" style="background:#FFFBEB; padding:12px 16px; border-radius:6px; border-left:3px solid #F59E0B;">
-      <div class="section-title" style="color:#92400E; border:none; padding:0; margin-bottom:4px;">Planning Note</div>
-      <div class="section-content" style="font-size:13px; color:#78350F;">{esc(notes)}</div>
+    # Abstract placeholder — light framing, no heavy boilerplate
+    if materials_html:
+        abstract_copy = "The full abstract will appear here once the presenter finalizes their summary. The slides and poster above reflect the current draft."
+    else:
+        abstract_copy = "The full abstract will appear here once the presenter finalizes their summary — check back as April 29 approaches."
+    abstract_placeholder = f'''
+    <div class="section">
+      <div class="section-title">Abstract</div>
+      <div class="section-content placeholder">{esc(abstract_copy)}</div>
     </div>'''
 
     return f'''<!DOCTYPE html>
@@ -186,7 +191,9 @@ def build_abstract_page(entry, entry_type="pgy3"):
 <div class="abstract-page">
 
   <nav class="back-nav">
-    <a href="../index.html">← Schedule</a>
+    <a href="../index.html">← Event Home</a>
+    <span class="sep">|</span>
+    <a href="../schedule.html">Schedule</a>
     <span class="sep">|</span>
     <a href="../gallery.html">All Research</a>
   </nav>
@@ -214,13 +221,13 @@ def build_abstract_page(entry, entry_type="pgy3"):
         </div>
       </div>
     </div>
-{sections_html}
+{materials_html}
+{abstract_placeholder}
 {mentors_html}
-{notes_html}
   </div>
 
   <footer class="abstract-footer">
-    UVA EM Research Day 2026 · <a href="../index.html">Back to Schedule</a> · <a href="../gallery.html">Browse All Research</a>
+    UVA EM Research Day 2026 · <a href="../index.html">Event Home</a> · <a href="../schedule.html">Schedule</a> · <a href="../gallery.html">Browse All Research</a>
   </footer>
 
 </div>
@@ -237,20 +244,27 @@ for p in data["pgy3Presenters"]:
     path = os.path.join(OUT_DIR, f"{p['slug']}.html")
     with open(path, "w") as f:
         f.write(html_content)
-    generated.append({"slug": p["slug"], "name": p["name"], "title": p["project"], "type": "pgy3", "format": p["format"], "methodology": p.get("methodology","")})
+    generated.append({
+        "slug": p["slug"], "name": p["name"], "title": p["project"],
+        "type": "pgy3", "format": p["format"], "methodology": p.get("methodology",""),
+        "hasSlides": "slidesUrl" in p, "hasPoster": "posterUrl" in p,
+    })
     print(f"  ✓ PGY-3: {p['slug']}.html")
 
-# SAEM gallery (skip those already generated as PGY-3)
-pgy3_slugs = {p["slug"] for p in data["pgy3Presenters"]}
+# SAEM gallery
 for s in data["saemGallery"]:
-    if s["alsoOnPgy3Schedule"]:
+    if s.get("alsoOnPgy3Schedule"):
         print(f"  ○ SAEM skip (already PGY-3): {s['piClean']}")
         continue
     html_content = build_abstract_page(s, "saem")
     path = os.path.join(OUT_DIR, f"{s['slug']}.html")
     with open(path, "w") as f:
         f.write(html_content)
-    generated.append({"slug": s["slug"], "name": s["piClean"], "title": s["title"], "type": "saem", "format": "saem-gallery", "methodology": "retrospective-database"})
+    generated.append({
+        "slug": s["slug"], "name": s["piClean"], "title": s["title"],
+        "type": "saem", "format": "saem-gallery", "methodology": "retrospective-database",
+        "hasSlides": "slidesUrl" in s, "hasPoster": "posterUrl" in s,
+    })
     print(f"  ✓ SAEM: {s['slug']}.html")
 
 # Dry-run presenters
@@ -259,7 +273,11 @@ for d in data["dryRunPresenters"]:
     path = os.path.join(OUT_DIR, f"{d['slug']}.html")
     with open(path, "w") as f:
         f.write(html_content)
-    generated.append({"slug": d["slug"], "name": d["name"], "title": d["project"], "type": "dryrun", "format": "saem-dryrun", "methodology": "prospective-observational"})
+    generated.append({
+        "slug": d["slug"], "name": d["name"], "title": d["project"],
+        "type": "dryrun", "format": "saem-dryrun", "methodology": "prospective-observational",
+        "hasSlides": "slidesUrl" in d, "hasPoster": "posterUrl" in d,
+    })
     print(f"  ✓ Dry-run: {d['slug']}.html")
 
 # Write generated index for use by gallery page
