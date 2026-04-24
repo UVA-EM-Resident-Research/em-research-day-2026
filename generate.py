@@ -154,10 +154,13 @@ def build_abstract_page(entry, entry_type="pgy3"):
         tags_html += '<span class="tag tag-pgy3">PGY-3</span>'
     elif entry_type == "saem":
         pi_full = entry.get("pi", "")
-        if "(R" in pi_full or "Dr." in pi_full:
-            tags_html += '<span class="tag tag-pgy3">Resident</span>'
-        elif "student" in pi_full.lower() or "(M" in pi_full:
+        role = entry.get("role", "")
+        if role == "scribe":
+            tags_html += '<span class="tag tag-scribe">Medical Scribe</span>'
+        elif role == "student" or "student" in pi_full.lower() or "(M" in pi_full:
             tags_html += '<span class="tag tag-student">Med Student</span>'
+        elif role == "resident" or "(R" in pi_full or "Dr." in pi_full:
+            tags_html += '<span class="tag tag-pgy3">Resident</span>'
         else:
             tags_html += '<span class="tag tag-faculty">Faculty</span>'
     if category:
@@ -175,12 +178,20 @@ def build_abstract_page(entry, entry_type="pgy3"):
     </div>'''
 
     # Authors line
+    role_display = entry.get("roleDisplay", "")
     if authors_str:
         authors_line = f'<div class="authors">with {esc(authors_str)}</div>'
     elif clean_mentors:
-        authors_line = f'<div class="authors"><strong>{esc(name)}</strong> · Faculty: {", ".join(esc(m) for m in clean_mentors)}</div>'
+        mentor_str = ", ".join(esc(m) for m in clean_mentors)
+        if role_display:
+            authors_line = f'<div class="authors"><strong>{esc(name)}</strong>, {esc(role_display)} · Faculty: {mentor_str}</div>'
+        else:
+            authors_line = f'<div class="authors"><strong>{esc(name)}</strong> · Faculty: {mentor_str}</div>'
     else:
-        authors_line = f'<div class="authors"><strong>{esc(name)}</strong></div>'
+        if role_display:
+            authors_line = f'<div class="authors"><strong>{esc(name)}</strong> · {esc(role_display)}</div>'
+        else:
+            authors_line = f'<div class="authors"><strong>{esc(name)}</strong></div>'
 
     # Presentation materials
     materials_html = materials_section(entry)
