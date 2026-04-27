@@ -367,7 +367,7 @@
       "category": null,
       "presentationType": "Abstract",
       "docLink": null,
-      "alsoOnPgy3Schedule": true
+      "alsoOnPgy3Schedule": false
     },
     {
       "pi": "Benton Spirek (UVA medical student)",
@@ -407,20 +407,6 @@
       "saemAccepted": true,
       "slidesUrl": "presentations/holstege-pregnancy-testing-slides.pdf",
       "materialStatus": "presenter"
-    },
-    {
-      "name": "Sigal Tavel",
-      "slug": "tavel-wells-pe",
-      "project": "Comparing Patient vs. Physician PE Risk Assessment Using the Wells Score",
-      "mentors": [
-        "Easter"
-      ],
-      "format": "saem-dryrun",
-      "blockTime": "11:52–12:04",
-      "saemAccepted": true,
-      "materialStatus": "draft",
-      "slidesUrl": "presentations/tavel-wells-pe-slides.pdf",
-      "posterUrl": "presentations/tavel-wells-pe-poster.pdf"
     }
   ],
   "methodologyTypes": {
