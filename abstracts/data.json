@@ -26,10 +26,12 @@
         "Joshua Easter"
       ],
       "format": "podium",
-      "blockTime": "9:19–9:31",
+      "blockTime": "Block A · Podium",
       "methodology": "retrospective-database",
       "saemAccepted": false,
-      "materialStatus": "draft"
+      "materialStatus": "draft",
+      "slidesUrl": "presentations/kim-systematic-review-slides.pdf",
+      "posterUrl": "presentations/kim-systematic-review-poster.pdf"
     },
     {
       "name": "Nicholas McKean",

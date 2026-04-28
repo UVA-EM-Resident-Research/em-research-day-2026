@@ -16,8 +16,8 @@
     "type": "pgy3",
     "format": "podium",
     "methodology": "retrospective-database",
-    "hasSlides": false,
-    "hasPoster": false
+    "hasSlides": true,
+    "hasPoster": true
   },
   {
     "slug": "mckean-whole-blood",
