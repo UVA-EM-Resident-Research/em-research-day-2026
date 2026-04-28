@@ -151,7 +151,10 @@ def build_abstract_page(entry, entry_type="pgy3"):
     if saem:
         tags_html += '<span class="tag tag-saem">SAEM 2026</span>'
     if entry_type == "pgy3":
-        tags_html += '<span class="tag tag-pgy3">PGY-3</span>'
+        # Allow per-entry override (e.g., PGY-2 if a non-graduating resident
+        # is on the program). Defaults to "PGY-3".
+        pgy_tag = entry.get("pgyTag", "PGY-3")
+        tags_html += f'<span class="tag tag-pgy3">{esc(pgy_tag)}</span>'
     elif entry_type == "saem":
         pi_full = entry.get("pi", "")
         role = entry.get("role", "")
