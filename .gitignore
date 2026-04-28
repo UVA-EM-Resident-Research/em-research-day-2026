@@ -34,3 +34,10 @@ node_modules/
 
 # Claude local state (not to be versioned)
 .claude/sessions/
+
+# Copyrighted source materials that may be dropped into the project
+# root for cross-checking — never to be redistributed via the repo.
+larsen_thom_dietls_crisis_case_JEM.pdf
+CDEM_*.pdf
+*_source.pdf
+sources/
