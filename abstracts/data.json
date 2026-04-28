@@ -11,7 +11,7 @@
         "Hartka"
       ],
       "format": "podium",
-      "blockTime": "9:07–9:19",
+      "blockTime": "Block A · Podium",
       "methodology": "clinical-innovation",
       "saemAccepted": true,
       "posterUrl": "presentations/carter-ai-scheduling-poster.pdf",
@@ -41,7 +41,7 @@
         "Lindbeck"
       ],
       "format": "podium",
-      "blockTime": "9:31–9:43",
+      "blockTime": "Block A · Podium",
       "methodology": "clinical-innovation",
       "saemAccepted": false,
       "materialStatus": "draft"
@@ -80,7 +80,7 @@
         "Thom"
       ],
       "format": "podium",
-      "blockTime": "10:17–10:29",
+      "blockTime": "Block B · Podium",
       "methodology": "case-report",
       "saemAccepted": false,
       "slidesUrl": "presentations/larsen-dietls-crisis-slides.pdf",
@@ -94,7 +94,7 @@
         "Easter"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29–10:47",
+      "blockTime": "Lightning Round · ~3 min",
       "methodology": "educational-chapter",
       "saemAccepted": false,
       "posterUrl": "presentations/smolley-peds-cases-poster.pdf",
@@ -105,10 +105,10 @@
       "slug": "buenrostro-torsion",
       "project": "Testicular Torsion — Book Chapter",
       "mentors": [
-        "Easter"
+        "Byrne"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29–10:47",
+      "blockTime": "Lightning Round · ~3 min",
       "methodology": "educational-chapter",
       "saemAccepted": false,
       "posterUrl": "presentations/buenrostro-torsion-poster.pdf",
@@ -122,7 +122,7 @@
         "Vandersteenhoven"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29–10:47",
+      "blockTime": "Lightning Round · ~3 min",
       "methodology": "case-report",
       "saemAccepted": false,
       "posterUrl": "presentations/rivera-junctional-tachycardia-poster.pdf",
@@ -136,7 +136,7 @@
         "Avery Michienzi"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29–10:47",
+      "blockTime": "Lightning Round · ~3 min",
       "methodology": "case-report",
       "saemAccepted": false,
       "posterUrl": "presentations/loehner-cardiac-glycoside-poster.pdf",
@@ -147,10 +147,10 @@
       "slug": "arbab-forensic-nurses",
       "project": "Forensic Nurse Examiners — Published Article",
       "mentors": [
-        "TBD"
+        "Margaret K. Sande"
       ],
       "format": "poster-lightning",
-      "blockTime": "10:29–10:47",
+      "blockTime": "Lightning Round · ~3 min",
       "methodology": "retrospective-database",
       "saemAccepted": false,
       "posterUrl": "presentations/arbab-forensic-nurses-poster.pdf",
@@ -411,7 +411,7 @@
         "Smith"
       ],
       "format": "saem-dryrun",
-      "blockTime": "11:17–11:29",
+      "blockTime": "SAEM Dress Rehearsal",
       "saemAccepted": true,
       "slidesUrl": "presentations/holstege-pregnancy-testing-slides.pdf",
       "materialStatus": "presenter"
