@@ -249,6 +249,12 @@
     margin-top: 2px;
   }
 
+  /* Speaker rows inside a block don't carry their own clock time;
+     the block-level section label gives the anchor. */
+  .block-speaker {
+    grid-template-columns: 1fr;
+  }
+
   .block-content {
     padding: 16px 28px;
   }
@@ -497,7 +503,7 @@
 </div>
 
   <div class="schedule-banner-note" style="padding:14px 48px; background:#FFF8F0; border-bottom:1px solid #E5E7EB; color:#78350F; font-size:13px;">
-  <strong>Note:</strong> This is a draft schedule. Please check back next week to confirm times for specific presentations.
+  <strong>Note:</strong> Block-level start times are firm; individual talks are listed in order without per-talk clock times so the morning can flex. Doors open at 8:00 and the program closes by 12:30.
 </div>
 
 <!-- FORMAT KEY -->
@@ -531,70 +537,59 @@
 
 <!-- SCHEDULE -->
 <div class="schedule">
-<div class="section-label">Opening</div>
-<div class="block">
-<div class="block-time">8:30 – 8:35<div class="duration">5 min</div></div>
+<div class="section-label">Opening · 8:30 AM</div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title">Welcome &amp; Opening Remarks</div>
 <div class="block-desc">Andrew Taylor, MD — Vice-Chair for Research</div>
 </div>
 </div>
-<div class="block block-highlight">
-<div class="block-time">8:35 – 8:55<div class="duration">20 min</div></div>
+<div class="block block-highlight block-speaker">
 <div class="block-content">
-<div class="block-title">Keynote — Bill Brady, MD </div>
+<div class="block-title">Keynote — Bill Brady, MD</div>
 <div class="block-desc">Key Trends in Emergency Medicine Research</div>
 </div>
 </div>
-<div class="section-label">PGY-3 Formal Presentations — Block A</div>
-<div class="block">
-<div class="block-time">9:07 – 9:19<div class="duration">10+2 min</div></div>
+<div class="section-label">PGY-3 Formal Presentations — Block A · ~9:00</div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title"><a class="presenter-link" href="abstracts/carter-ai-scheduling.html">Michael Carter</a> <span class="tag tag-saem">SAEM</span> <span class="tag tag-pgy3">PGY-3</span></div>
 <div class="block-desc">AI Scheduling Comparison — Using ChatGPT and Grok to Automate Shift Scheduling</div>
 </div>
 </div>
-<div class="block">
-<div class="block-time">9:19 – 9:31<div class="duration">10+2 min</div></div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title"><a class="presenter-link" href="abstracts/kim-systematic-review.html">Paul Kim</a> <span class="tag tag-pgy3">PGY-3</span></div>
 <div class="block-desc">Systematic Review Snapshot — Accepted at Annals of Emergency Medicine</div>
 </div>
 </div>
-<div class="block">
-<div class="block-time">9:31 – 9:43<div class="duration">10+2 min</div></div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title"><a class="presenter-link" href="abstracts/mckean-whole-blood.html">Nicholas McKean</a> <span class="tag tag-pgy3">PGY-3</span></div>
 <div class="block-desc">Whole Blood Protocol for EM/Trauma — Development and Addition to UVA Trauma Manual</div>
 </div>
 </div>
-<div class="block block-break">
-<div class="block-time">9:43 – 9:53<div class="duration">10 min</div></div>
+<div class="block block-break block-speaker">
 <div class="block-content">
 <div class="block-title">Break</div>
 <div class="block-desc">Coffee &amp; first look at SAEM Gallery Wall and poster displays</div>
 </div>
 </div>
 <div class="section-label">PGY-3 Formal Presentations — Block B</div>
-<div class="block">
-<div class="block-time">9:53 – 10:05<div class="duration">10+2 min</div></div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title"><a class="presenter-link" href="abstracts/britton-alcohol-ed.html">Matthew Britton</a> <span class="tag tag-saem">SAEM</span> <span class="tag tag-pgy3">PGY-3</span></div>
 <div class="block-desc">Alcohol-Related ED Visits in the Collegiate Population — Temporal Trends Analysis</div>
-
 </div>
 </div>
-
-<div class="block">
-<div class="block-time">10:17 – 10:29<div class="duration">10+2 min</div></div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title"><a class="presenter-link" href="abstracts/larsen-dietls-crisis.html">Michael Larsen</a> <span class="tag tag-pgy3">PGY-3</span></div>
 <div class="block-desc">Dietl's Crisis — Case Report</div>
 </div>
 </div>
 <div class="section-label">PGY-3 Poster Lightning Round + Gallery Walk</div>
-<div class="block block-gallery">
-<div class="block-time">10:29 – 10:47<div class="duration">~18 min</div></div>
+<div class="block block-gallery block-speaker">
 <div class="block-content">
 <div class="block-title">Lightning Talks — 2–3 min each</div>
 <div class="block-desc">Each poster presenter gives a short verbal hook from the podium, then directs the audience to their poster.</div>
@@ -604,44 +599,36 @@
 <div class="presenter-item"><a class="presenter-link" href="abstracts/rivera-junctional-tachycardia.html"><span class="p-name">Daniel Rivera</span></a> <span class="tag tag-pgy3">PGY-3</span><br/><span class="p-topic">Junctional Tachycardia — Article</span></div>
 <div class="presenter-item"><a class="presenter-link" href="abstracts/loehner-cardiac-glycoside.html"><span class="p-name">Jennifer Loehner</span></a> <span class="tag tag-pgy3">PGY-3</span><br/><span class="p-topic">Cardiac Glycoside Toxicology — VACEP Poster</span></div>
 <div class="presenter-item"><a class="presenter-link" href="abstracts/arbab-forensic-nurses.html"><span class="p-name">Zunaira Arbab</span></a> <span class="tag tag-pgy3">PGY-3</span><br/><span class="p-topic">Forensic Nurse Examiners — Published Article</span></div>
-
 </div>
 </div>
 </div>
-<div class="block block-gallery">
-<div class="block-time">10:47 – 11:17<div class="duration">30 min</div></div>
+<div class="block block-gallery block-speaker">
 <div class="block-content">
 <div class="block-title">Gallery Walk — Posters + SAEM Abstract Wall</div>
 <div class="block-desc">Faculty and residents circulate. <a href="gallery.html" style="color:var(--uva-navy); font-weight:600;">21 SAEM-accepted abstracts</a> displayed as graphical one-pagers. Coffee and refreshments available.</div>
 </div>
 </div>
 <div class="section-label">SAEM Dress Rehearsal</div>
-<div class="block block-highlight">
-<div class="block-time">11:17 – 11:29<div class="duration">10+2 min</div></div>
+<div class="block block-highlight block-speaker">
 <div class="block-content">
 <div class="block-title"><a class="presenter-link" href="abstracts/holstege-pregnancy-testing.html">Margaret Holstege</a> <span class="tag tag-saem">SAEM</span></div>
 <div class="block-desc">Optimization of Pregnancy Testing in the UVA ED</div>
 </div>
 </div>
-<div class="section-label">Closing</div>
-
-<div class="block block-highlight">
-<div class="block-time">11:51 – 12:05<div class="duration">14 min</div></div>
+<div class="section-label">Closing · ~11:50 → 12:30</div>
+<div class="block block-highlight block-speaker">
 <div class="block-content">
 <div class="block-title">Inaugural Resident Research Award 🏆</div>
 <div class="block-desc">Award presentation and announcement</div>
-
 </div>
 </div>
-<div class="block">
-<div class="block-time">12:05 – 12:15<div class="duration">10 min</div></div>
+<div class="block block-speaker">
 <div class="block-content">
 <div class="block-title">Closing Remarks</div>
 <div class="block-desc">Andrew Taylor, MD</div>
 </div>
 </div>
-<div class="block block-break">
-<div class="block-time">12:15 – 12:30<div class="duration">15 min</div></div>
+<div class="block block-break block-speaker">
 <div class="block-content">
 <div class="block-title">Networking &amp; Gallery Walk</div>
 <div class="block-desc">Informal conversation and additional time at the poster displays</div>
