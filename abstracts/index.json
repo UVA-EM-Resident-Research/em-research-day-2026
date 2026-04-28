@@ -6,7 +6,7 @@
     "type": "pgy3",
     "format": "podium",
     "methodology": "clinical-innovation",
-    "hasSlides": false,
+    "hasSlides": true,
     "hasPoster": true
   },
   {
@@ -26,8 +26,8 @@
     "type": "pgy3",
     "format": "podium",
     "methodology": "clinical-innovation",
-    "hasSlides": false,
-    "hasPoster": false
+    "hasSlides": true,
+    "hasPoster": true
   },
   {
     "slug": "britton-alcohol-ed",
@@ -42,12 +42,12 @@
   {
     "slug": "larsen-dietls-crisis",
     "name": "Michael Larsen",
-    "title": "Dietl's Crisis \u2014 Case Report",
+    "title": "Dietl's Crisis \u2014 Case Report (J Emerg Med 2024;67(4):e346\u2013e350)",
     "type": "pgy3",
     "format": "podium",
     "methodology": "case-report",
     "hasSlides": true,
-    "hasPoster": false
+    "hasPoster": true
   },
   {
     "slug": "smolley-peds-cases",
@@ -71,12 +71,12 @@
   },
   {
     "slug": "rivera-junctional-tachycardia",
-    "name": "Daniel Rivera",
-    "title": "Junctional Tachycardia \u2014 Article",
+    "name": "Daniel Rivera-Mor\u00e1n",
+    "title": "Junctional Tachycardia in the ED \u2014 Critical Decisions in Emergency Medicine 2025;39(4):15\u201317",
     "type": "pgy3",
     "format": "poster-lightning",
     "methodology": "case-report",
-    "hasSlides": false,
+    "hasSlides": true,
     "hasPoster": true
   },
   {

@@ -14,6 +14,7 @@
       "blockTime": "Block A · Podium",
       "methodology": "clinical-innovation",
       "saemAccepted": true,
+      "slidesUrl": "presentations/carter-ai-scheduling-slides.pdf",
       "posterUrl": "presentations/carter-ai-scheduling-poster.pdf",
       "materialStatus": "draft"
     },
@@ -44,6 +45,8 @@
       "blockTime": "Block A · Podium",
       "methodology": "clinical-innovation",
       "saemAccepted": false,
+      "slidesUrl": "presentations/mckean-whole-blood-slides.pdf",
+      "posterUrl": "presentations/mckean-whole-blood-poster.pdf",
       "materialStatus": "draft"
     },
     {
@@ -75,15 +78,16 @@
     {
       "name": "Michael Larsen",
       "slug": "larsen-dietls-crisis",
-      "project": "Dietl's Crisis — Case Report",
+      "project": "Dietl's Crisis — Case Report (J Emerg Med 2024;67(4):e346–e350)",
       "mentors": [
-        "Thom"
+        "Christopher D. Thom"
       ],
       "format": "podium",
       "blockTime": "Block B · Podium",
       "methodology": "case-report",
       "saemAccepted": false,
       "slidesUrl": "presentations/larsen-dietls-crisis-slides.pdf",
+      "posterUrl": "presentations/larsen-dietls-crisis-poster.pdf",
       "materialStatus": "draft"
     },
     {
@@ -115,18 +119,27 @@
       "materialStatus": "draft"
     },
     {
-      "name": "Daniel Rivera",
+      "name": "Daniel Rivera-Morán",
       "slug": "rivera-junctional-tachycardia",
-      "project": "Junctional Tachycardia — Article",
+      "project": "Junctional Tachycardia in the ED — Critical Decisions in Emergency Medicine 2025;39(4):15–17",
       "mentors": [
-        "Vandersteenhoven"
+        "Peter Vandersteenhoven",
+        "William Brady"
       ],
       "format": "poster-lightning",
       "blockTime": "Lightning Round · ~3 min",
       "methodology": "case-report",
       "saemAccepted": false,
+      "slidesUrl": "presentations/rivera-junctional-tachycardia-slides.pdf",
       "posterUrl": "presentations/rivera-junctional-tachycardia-poster.pdf",
-      "materialStatus": "draft"
+      "materialStatus": "draft",
+      "saemAuthors": "Daniel Rivera-Moran, MD; Peter Vandersteenhoven, MD; William Brady, MD",
+      "abstractContent": {
+        "background": "Junctional tachycardia (JET) is an uncommon AV-junctional dysrhythmia that arises from enhanced automaticity in the AV junction. It is easily mistaken for AVNRT, AVRT, or atrial flutter on a quick read, and recognition matters because treatment depends on the underlying trigger — most often medication effect (digoxin), ischemia, connective-tissue disease, or vagal stimulation.",
+        "methods": "Case from the University of Virginia Emergency Department: an 80-year-old woman with hypothyroidism and hypertension presenting with dizziness, chest pain, and shortness of breath. Initial ECG followed by repeat ECG capturing the rhythm change. Bedside vagal maneuver (carotid massage) used as a diagnostic adjunct. Differential constructed against AVRT, AVNRT, and atrial flutter using the Critical Decisions in Emergency Medicine ECG Patterns table.",
+        "results": "Initial vitals: BP 142/77, HR 115, SpO₂ 100%. Workup included ECG, CXR, BMP, CBC, magnesium, TSH, troponin, and D-dimer; troponin mildly elevated at 6 ng/mL. Repeat ECG after IV fluids showed JET (narrow-complex, regular, ~130 bpm, P-waves variable). Carotid massage unmasked an underlying atrial rhythm at ~240 bpm — atypical atrial flutter vs 2:1 atrial tachycardia. Patient declined adenosine; metoprolol initiated for rate control; admitted to cardiology; underwent successful electric cardioversion; discharged on amiodarone.",
+        "conclusions": "Three learning points carry: (1) JET typically presents as a regular narrow-complex tachycardia ± P-waves, with isorhythmic AV dissociation distinguishing it from AVRT and AVNRT. (2) JET arises from enhanced automaticity in the AV junction and may be triggered by medications, connective-tissue disease, ischemic conditions, or vagal stimulation — treatment depends on the etiology. (3) Digoxin and myocardial ischemia are the two most widely recognized causes of JET."
+      }
     },
     {
       "name": "Jennifer Loehner",
