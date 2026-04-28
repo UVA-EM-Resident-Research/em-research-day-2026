@@ -14,7 +14,6 @@
       "blockTime": "9:07–9:19",
       "methodology": "clinical-innovation",
       "saemAccepted": true,
-      "slidesUrl": "presentations/carter-ai-scheduling-slides.pdf",
       "posterUrl": "presentations/carter-ai-scheduling-poster.pdf",
       "materialStatus": "draft"
     },
@@ -30,7 +29,6 @@
       "blockTime": "9:19–9:31",
       "methodology": "retrospective-database",
       "saemAccepted": false,
-      "slidesUrl": "presentations/kim-systematic-review-slides.pdf",
       "materialStatus": "draft"
     },
     {
@@ -44,7 +42,6 @@
       "blockTime": "9:31–9:43",
       "methodology": "clinical-innovation",
       "saemAccepted": false,
-      "slidesUrl": "presentations/mckean-whole-blood-slides.pdf",
       "materialStatus": "draft"
     },
     {
@@ -61,7 +58,6 @@
       "blockTime": "9:53–10:05",
       "methodology": "retrospective-database",
       "saemAccepted": true,
-      "slidesUrl": "presentations/britton-alcohol-ed-slides.pdf",
       "materialStatus": "draft"
     },
     {
