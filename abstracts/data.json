@@ -49,16 +49,24 @@
       "slug": "britton-alcohol-ed",
       "project": "Alcohol-Related ED Visits in the Collegiate Population — Temporal Trends Analysis",
       "mentors": [
-        "Wendel",
-        "Smith",
-        "Farah",
-        "Holstege"
+        "Sarah Wendel",
+        "Moira Smith",
+        "Rita Farah",
+        "Christopher Holstege"
       ],
       "format": "podium",
-      "blockTime": "9:53–10:05",
+      "blockTime": "Block B · Podium",
       "methodology": "retrospective-database",
       "saemAccepted": true,
-      "materialStatus": "draft"
+      "materialStatus": "draft",
+      "saemTitle": "Temporal Trends of Alcohol Related Visits to the Emergency Department in the Collegiate Population",
+      "saemAuthors": "Rita Farah, Samy Kebaish, Sarah Wendel, Moira Smith, Jacob Britton, Christopher Holstege",
+      "abstractContent": {
+        "background": "Young U.S. adults are drinking less compared to decades prior. However, according to the 2023 NSDUH survey, 29 percent of male and 28 percent of female full-time college students engaged in binge drinking during the past month. This study aimed to characterize the temporal distribution of alcohol-related emergency department (ED) visits among college students.",
+        "methods": "We reviewed collegiate student visits to a university-affiliated ED between 2018 and 2023. We compared temporal patterns of alcohol and non-alcohol related visits by day of the week and hour of the day. We characterized periods of high alcohol-related ED utilization using a temporal window–based density analysis across three resolutions: 24-hour, 48-hour, and 72-hour intervals. The total number of alcohol-related ED events falling within each window was computed using an exhaustive rolling-count algorithm. Windows were then ranked by event count to identify the top 95th percentile for each time horizon. Data were analyzed using Python, with the SciKit-Learn and NumPy libraries.",
+        "results": "During the study period, 9809 collegiate student ED visits were documented with 9.7% associated with an alcohol diagnosis. When evaluating temporal patterns of alcohol-related ED visits by day of the week, 85.1% occurred on Friday, Saturday, or Sunday, compared to a more uniform distribution of non-alcohol visits. Alcohol-related visits were more likely to occur on weekends than weekdays (OR = 5.8, 95% CI = 5.3–6.4, p < 0.001). A similar skew was observed by hour of day, with 60.7% of alcohol events occurring during 0000–0200, representing an increased likelihood relative to non-alcohol events (OR = 6.9, 95% CI = 6.2–7.7, p < 0.001). Analysis of alcohol visits revealed patterns of incidence clustered mostly around university home football games (40%), the first and last weekend of semesters (27%), Halloween (17%), and identified Greek life-related events (10%).",
+        "conclusions": "Our study shows clear, predictable patterns in alcohol-related ED visits through temporal analysis. Recognizing these predictable surges can inform proactive ED staffing and resource allocation to better match anticipated demand. Additionally, these findings suggest that university-affiliated EDs should partner with university student affairs professionals to deliver targeted public education to university students."
+      }
     },
     {
       "name": "Michael Larsen",
@@ -322,15 +330,15 @@
       "alsoOnPgy3Schedule": false
     },
     {
-      "pi": "Jacob Britton (Wendel, Smith, Farah, Holstege)",
-      "piClean": "Jacob Britton",
-      "slug": "jacob-britton-temporal-trends-of-alcohol-rel",
+      "pi": "Matthew Britton (Farah, Kebaish, Wendel, Smith, Holstege)",
+      "piClean": "Matthew Britton",
+      "slug": "britton-alcohol-ed",
       "title": "Temporal Trends of Alcohol Related Visits to the Emergency Department in the Collegiate Population",
-      "authors": null,
+      "authors": "Rita Farah, Samy Kebaish, Sarah Wendel, Moira Smith, Jacob Britton, Christopher Holstege",
       "category": "Toxicology",
       "presentationType": "Abstract",
       "docLink": null,
-      "alsoOnPgy3Schedule": false
+      "alsoOnPgy3Schedule": true
     },
     {
       "pi": "Benton Spirek (UVA medical student)",

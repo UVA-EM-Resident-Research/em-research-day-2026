@@ -196,12 +196,47 @@ def build_abstract_page(entry, entry_type="pgy3"):
     # Presentation materials
     materials_html = materials_section(entry)
 
-    # Abstract placeholder — light framing, no heavy boilerplate
-    if materials_html:
-        abstract_copy = "The full abstract will appear here once the presenter finalizes their summary. The slides and poster above reflect the current draft."
+    # Abstract: real content if provided, otherwise placeholder
+    abstract_content = entry.get("abstractContent")
+    saem_title = entry.get("saemTitle")
+    saem_authors = entry.get("saemAuthors")
+
+    if abstract_content:
+        body_blocks = []
+        # Optional SAEM banner above the four sections
+        saem_meta_lines = []
+        if saem_title and saem_title != title:
+            saem_meta_lines.append(f'<div style="font-size:13px; color:var(--gray-700); margin-bottom:6px;"><strong>Submitted to SAEM 2026 as:</strong> {esc(saem_title)}</div>')
+        if saem_authors:
+            saem_meta_lines.append(f'<div style="font-size:13px; color:var(--gray-700);"><strong>Authors:</strong> {esc(saem_authors)}</div>')
+        if saem_meta_lines:
+            body_blocks.append(f'<div class="abstract-meta" style="padding:14px 16px; background:var(--gray-50, #f9fafb); border-left:3px solid var(--uva-orange, #E57200); margin-bottom:18px;">{"".join(saem_meta_lines)}</div>')
+
+        section_order = [
+            ("background", "Background"),
+            ("methods", "Methods"),
+            ("results", "Results"),
+            ("conclusions", "Conclusions"),
+        ]
+        for key, label in section_order:
+            text = abstract_content.get(key)
+            if not text:
+                continue
+            body_blocks.append(
+                f'<div style="margin-bottom:14px;"><div style="font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--uva-navy, #232D4B); margin-bottom:4px;">{label}</div>'
+                f'<div style="font-size:14px; line-height:1.6; color:var(--gray-700, #374151);">{esc(text)}</div></div>'
+            )
+        abstract_placeholder = f'''
+    <div class="section">
+      <div class="section-title">Abstract</div>
+      <div class="section-content">{"".join(body_blocks)}</div>
+    </div>'''
     else:
-        abstract_copy = "The full abstract will appear here once the presenter finalizes their summary — check back as April 29 approaches."
-    abstract_placeholder = f'''
+        if materials_html:
+            abstract_copy = "The full abstract will appear here once the presenter finalizes their summary. The slides and poster above reflect the current draft."
+        else:
+            abstract_copy = "The full abstract will appear here once the presenter finalizes their summary — check back as April 29 approaches."
+        abstract_placeholder = f'''
     <div class="section">
       <div class="section-title">Abstract</div>
       <div class="section-content placeholder">{esc(abstract_copy)}</div>
@@ -326,5 +361,25 @@ for d in data["dryRunPresenters"]:
 # Write generated index for use by gallery page
 with open(os.path.join(OUT_DIR, "index.json"), "w") as f:
     json.dump(generated, f, indent=2)
+
+# Sync gallery.html's embedded projects[] array from the same source
+gallery_path = os.path.join(SITE_DIR, "gallery.html")
+if os.path.exists(gallery_path):
+    with open(gallery_path) as f:
+        gallery_html = f.read()
+    start_marker = "const projects = ["
+    end_marker = "];"
+    s = gallery_html.find(start_marker)
+    if s != -1:
+        e = gallery_html.find(end_marker, s)
+        if e != -1:
+            new_array = "const projects = " + json.dumps(generated, indent=2)
+            new_gallery = gallery_html[:s] + new_array + gallery_html[e + len(end_marker):]
+            if new_gallery != gallery_html:
+                with open(gallery_path, "w") as f:
+                    f.write(new_gallery)
+                print(f"  ✓ Synced gallery.html projects[] ({len(generated)} entries)")
+            else:
+                print(f"  ○ gallery.html projects[] already in sync")
 
 print(f"\n✅ Generated {len(generated)} research overview pages")
