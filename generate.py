@@ -29,6 +29,7 @@ def format_label(fmt):
         "poster-lightning": "Poster + Lightning Talk",
         "saem-dryrun": "SAEM Dress Rehearsal",
         "saem-gallery": "SAEM Gallery Wall",
+        "display-only": "Materials on Display",
     }
     return labels.get(fmt, fmt)
 
@@ -38,6 +39,7 @@ def format_icon(fmt):
         "poster-lightning": "📋",
         "saem-dryrun": "🎯",
         "saem-gallery": "🖼️",
+        "display-only": "🖼️",
     }
     return icons.get(fmt, "📄")
 
@@ -117,6 +119,12 @@ def build_abstract_page(entry, entry_type="pgy3"):
         saem = entry.get("saemAccepted", False)
         category = ""
         authors_str = ""
+        # Late-decline override: presenter is not speaking, but their
+        # materials remain on display. Reframes the Presentation Details
+        # card without dropping the rich abstract content.
+        if entry.get("displayOnly"):
+            fmt = "display-only"
+            block_time = "On display all morning"
     elif entry_type == "saem":
         name = entry["piClean"]
         title = entry["title"]
@@ -199,6 +207,21 @@ def build_abstract_page(entry, entry_type="pgy3"):
     # Presentation materials
     materials_html = materials_section(entry)
 
+    # Display-only banner (presenter not speaking; materials remain on display)
+    if entry.get("displayOnly"):
+        note_text = entry.get("displayOnlyNote") or (
+            f"{name} is not presenting live on April 29; their slides "
+            f"and poster remain on display in the gallery walk."
+        )
+        display_only_note = f'''
+    <div class="section">
+      <div style="padding:14px 20px; background:#FFF8F0; border-left:3px solid #E57200; font-size:13px; color:#78350F; line-height:1.55;">
+        <strong>Materials on display</strong> — {esc(note_text)}
+      </div>
+    </div>'''
+    else:
+        display_only_note = ""
+
     # Abstract: real content if provided, otherwise placeholder
     abstract_content = entry.get("abstractContent")
     saem_title = entry.get("saemTitle")
@@ -278,7 +301,7 @@ def build_abstract_page(entry, entry_type="pgy3"):
   </div>
 
   <div class="abstract-body">
-
+{display_only_note}
     <div class="section">
       <div class="section-title">Presentation Details</div>
       <div class="schedule-card">

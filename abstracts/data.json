@@ -16,7 +16,9 @@
       "saemAccepted": true,
       "slidesUrl": "presentations/carter-ai-scheduling-slides.pdf",
       "posterUrl": "presentations/carter-ai-scheduling-poster.pdf",
-      "materialStatus": "draft"
+      "materialStatus": "draft",
+      "displayOnly": true,
+      "displayOnlyNote": "Dr. Carter is on overnight shift the night before Research Day and is not presenting live on April 29; the SAEM 2026 innovation submission (ChatGPT vs. Grok for resident shift scheduling) is on display as part of the gallery walk."
     },
     {
       "name": "Paul Kim, DO",
@@ -32,7 +34,9 @@
       "saemAccepted": false,
       "materialStatus": "draft",
       "slidesUrl": "presentations/kim-systematic-review-slides.pdf",
-      "posterUrl": "presentations/kim-systematic-review-poster.pdf"
+      "posterUrl": "presentations/kim-systematic-review-poster.pdf",
+      "displayOnly": true,
+      "displayOnlyNote": "Dr. Kim is not presenting live on April 29; his published Annals of Emergency Medicine 2026;87(1):25–28 systematic review snapshot — co-authored with Drs. Easter and Long — is on display as part of the gallery walk."
     },
     {
       "name": "Nicholas McKean",
@@ -59,6 +63,8 @@
         "Rita Farah",
         "Christopher Holstege"
       ],
+      "displayOnly": true,
+      "displayOnlyNote": "Dr. Britton is not presenting live on April 29; the SAEM 2026 abstract (Farah, Kebaish, Wendel, Smith, Britton, Holstege) — temporal-window analysis of alcohol-related ED visits in the collegiate population — is on display as part of the gallery walk.",
       "format": "podium",
       "blockTime": "Block B · Podium",
       "methodology": "retrospective-database",
