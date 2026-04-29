@@ -351,6 +351,46 @@
     border-color: var(--cream);
   }
 
+  .card-link {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 14px;
+    background: var(--navy);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1.5px solid var(--navy);
+    transition: all 0.15s ease;
+  }
+  .card-link:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--navy-deep);
+  }
+  .block-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: transparent;
+    color: var(--orange);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1.5px solid var(--orange);
+    transition: all 0.15s ease;
+  }
+  .block-link:hover {
+    background: var(--orange);
+    color: var(--navy-deep);
+  }
+
 </style>
 </head>
 <body>
@@ -398,6 +438,7 @@
       <div class="format-card">
         <h3>Gallery + Discussion</h3>
         <p>Fifteen verified posters on display; round-the-room reflection and a looking-ahead conversation on the year ahead in resident research.</p>
+        <a href="posters.html" class="card-link">View the Posters &rarr;</a>
       </div>
     </div>
   </div>
@@ -506,6 +547,7 @@
           <div class="block-label">Coffee + Gallery</div>
           <div class="block-title">Coffee Break | SAEM Abstracts + PGY-3 Research Snapshot Posters on Display</div>
           <div class="block-desc">Presenters at their boards as the room moves through the gallery.</div>
+          <a href="posters.html" class="block-link">View the Posters Online &rarr;</a>
         </div>
       </div>
 
